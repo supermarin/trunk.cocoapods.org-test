@@ -8,3 +8,5 @@ before_script:
   - echo -e "Host github.com\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
 install: bundle install
 script: bundle exec rake
+notifications:
+  webhooks: http://alloy.pagekite.me/travis_build_results

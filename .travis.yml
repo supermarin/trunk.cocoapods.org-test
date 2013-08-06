@@ -9,4 +9,4 @@ before_script:
 install: bundle install
 script: bundle exec rake
 notifications:
-  webhooks: http://alloy.pagekite.me/travis_build_results
+  webhooks: http://alloy.pagekite.me/travis/builds

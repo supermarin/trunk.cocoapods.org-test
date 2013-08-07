@@ -9,4 +9,4 @@ before_script:
 install: bundle install
 script: bundle exec rake
 notifications:
-  webhooks: http://alloy.pagekite.me/travis/builds
+  webhooks: http://cocoapods-trunk-service.herokuapp.com/travis/builds

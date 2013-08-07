@@ -9,4 +9,10 @@ before_script:
 install: bundle install
 script: bundle exec rake
 notifications:
-  webhooks: http://cocoapods-trunk-service.herokuapp.com/travis/builds
+  webhooks:
+    urls:
+      - http://cocoapods-trunk-service.herokuapp.com/travis/builds
+      - http://requestb.in/19f67qf1
+    on_success: always
+    on_failure: always
+    on_start: true

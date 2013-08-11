@@ -9,9 +9,8 @@ before_script:
 install: bundle install
 script: bundle exec rake
 branches:
-  only:
-    - master
-    - /^Pull Request #\d+$/
+  except:
+    - /-job-\d+$/
 notifications:
   webhooks:
     urls:

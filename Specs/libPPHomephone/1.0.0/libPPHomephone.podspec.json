@@ -1,0 +1,20 @@
+{
+  "name": "libPPHomephone",
+  "version": "1.0.0",
+  "summary": "libPPHomephone is to find homo word.",
+  "homepage": "http://Penpower/libPPHomephone",
+  "license": "MIT",
+  "authors": {
+    "Bill Cheng": "bill.cheng@penpower.com.tw"
+  },
+  "source": {
+    "git": "/Volumes/inno eng/SourceCode/Apple/Base/Kernel/libPPHomophone.git",
+    "tag": "1.0.0"
+  },
+  "platforms": {
+    "ios": "5.0"
+  },
+  "source_files": "Classes/**/*.{h,m,mm,cpp}",
+  "resources": "Assets",
+  "libraries": "stdc++"
+}

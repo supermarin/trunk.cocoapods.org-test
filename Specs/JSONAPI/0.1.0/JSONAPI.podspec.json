@@ -1,0 +1,25 @@
+{
+  "name": "JSONAPI",
+  "version": "0.1.0",
+  "summary": "Model mapper/parser for JSON API",
+  "description": "                    Maps a JSON response conformed to JSON API spect to objects.\n",
+  "homepage": "http://joshholtz.com",
+  "screenshots": [
+    "www.example.com/screenshots_1",
+    "www.example.com/screenshots_2"
+  ],
+  "license": "MIT",
+  "authors": {
+    "Josh Holtz": "me@joshholtz.com"
+  },
+  "source": {
+    "git": "https://github.com/joshdholtz/jsonapi-ios.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "5.0"
+  },
+  "requires_arc": true,
+  "public_header_files": "Classes/*.h",
+  "source_files": "Classes/*"
+}

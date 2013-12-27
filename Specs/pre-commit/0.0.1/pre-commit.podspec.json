@@ -1,0 +1,18 @@
+{
+  "name": "pre-commit",
+  "version": "0.0.1",
+  "summary": "Automatically install a git pre-commit hook.",
+  "description": "                    Automatically install a pre-commit hook from your working directory.\n\n                    * Ensure that code is always linted and tested before checking it in.\n                    * Save your pre-commit hook in .hooks/pre-commit\n                    * Use the usual git operations, forget about that pesky Cmd-U, rake or xctool.\n                    * When sharing code, new team members automatically get the pre-commit hooks.\n",
+  "homepage": "http://mickeyreiss.github.io/pre-commit",
+  "license": "MIT",
+  "authors": {
+    "Mickey Reiss": "mickeyreiss@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/mickeyreiss/pre-commit.git",
+    "tag": "0.0.1"
+  },
+  "requires_arc": true,
+  "source_files": "Source/Dummy.m",
+  "prepare_command": "    GIT_PRECOMMIT_SCRIPT=.git/hooks/pre-commit\n    MY_PRECOMMIT_SCRIPT=.hooks/pre-commit\n    if [[ -f ${GIT_PRECOMMIT_SCRIPT} ]]; then\n      echo \"Error: the pre-commit pod will not override the existing pre-commit hook at '${GIT_PRECOMMIT_SCRIPT}'. To fix this, remove the script (\\`rm ${GIT_PRECOMMIT_SCRIPT}\\`) or delete this pod from your Podfile.\" >&2\n      exit 1\n    elif [[ ! -x ${MY_PRECOMMIT_SCRIPT} ]]; then\n      if [[ -h ${GIT_PRECOMMIT_SCRIPT} ]]; then\n        rm ${GIT_PRECOMMIT_SCRIPT}\n      fi\n      echo \"Warning: the pre-commit pod expects to find an executable script at '${MY_PRECOMMIT_SCRIPT}', but none was found. To fix this, add the script and make sure it is executable (\\`chmod +x ${MY_PRECOMMIT_SCRIPT}\\`).\" >&2\n    fi\n\n    ln -fs ${MY_PRECOMMIT_SCRIPT} ${GIT_PRECOMMIT_SCRIPT}\n"
+}

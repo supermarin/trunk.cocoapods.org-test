@@ -1,0 +1,16 @@
+{
+  "name": "NSDate-Extensions",
+  "summary": "An NSDate category with date math, date comparisons, date roles, and various other utilities.",
+  "version": "1.0.3",
+  "authors": {
+    "Erica Sadun": "erica@ericasadun.com"
+  },
+  "source": {
+    "git": "https://github.com/benvolioT/NSDate-Extensions.git",
+    "tag": "1.0.3"
+  },
+  "source_files": "NSDate-Utilities.{h,m}",
+  "license": "BSD",
+  "homepage": "https://github.com/erica/NSDate-Extensions",
+  "requires_arc": true
+}

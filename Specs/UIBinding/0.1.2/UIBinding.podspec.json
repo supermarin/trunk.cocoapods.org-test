@@ -1,0 +1,28 @@
+{
+  "name": "UIBinding",
+  "version": "0.1.2",
+  "summary": "A simple UIBinding Library.",
+  "homepage": "https://github.com/pdavidson/UIBinding",
+  "license": {
+    "type": "MIT",
+    "text": "                   Copyright 2012\n                   Permission is granted to...\n"
+  },
+  "authors": {
+    "Peter Davidson": "PeterDavidson@Boiseinc.com",
+    "Joel Sonoda": "JoelSonoda@Boiseinc.com"
+  },
+  "platforms": {
+    "ios": "6.0"
+  },
+  "source": {
+    "git": "https://github.com/pdavidson/UIBinding.git",
+    "tag": "v0.1.2"
+  },
+  "source_files": [
+    "Classes",
+    "Classes/**/*.{h,m}"
+  ],
+  "exclude_files": "Classes/Exclude",
+  "public_header_files": "Classes/UIBinding.h",
+  "requires_arc": true
+}

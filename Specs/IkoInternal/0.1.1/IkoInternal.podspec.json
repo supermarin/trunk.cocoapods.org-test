@@ -1,0 +1,32 @@
+{
+  "name": "IkoInternal",
+  "version": "0.1.1",
+  "summary": "Internal Libs of Ikomobi for iOS",
+  "description": "                    Most of the internal tools of Ikomobi available in one place !\n",
+  "homepage": "http://ikomobi.com",
+  "license": "MIT",
+  "source": {
+    "git": "git@bitbucket.org:ikomobi/ios-internal-lib.git",
+    "tag": "0.1.1"
+  },
+  "authors": {
+    "Thomas Cassany": "thomas@ikomobi.com"
+  },
+  "platforms": {
+    "ios": "5.0"
+  },
+  "requires_arc": true,
+  "header_mappings_dir": "Classes",
+  "subspecs": [
+    {
+      "name": "Utils",
+      "source_files": "Classes/Utils/Utils/",
+      "public_header_files": "Classes/Utils/Utils/*.h"
+    },
+    {
+      "name": "CoreData",
+      "source_files": "Classes/CoreData/CoreData/",
+      "public_header_files": "Classes/CoreData/CoreData/*.h"
+    }
+  ]
+}

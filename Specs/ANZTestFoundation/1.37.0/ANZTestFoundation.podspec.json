@@ -1,0 +1,65 @@
+{
+  "name": "ANZTestFoundation",
+  "version": "1.37.0",
+  "summary": "Useful ANZ Test classes.",
+  "homepage": "http://appau227dev262.appdev.corptst.anz.com:8090/display/IDS/iOS+Development+Space+Home;jsessionid=2F37D05C4255791FE2E8642F793B8A98",
+  "authors": {
+    "Rochana Attale Don": "gayani.attaledon@anz.com",
+    "Michael Dove": "michael.dove@outware.com.au",
+    "Shaun Ervine": "shaun.ervine@anz.com",
+    "Bin Feng": "bin@outware.com.au",
+    "Alex Gvozdik": "alex@outware.com.au",
+    "Kent Humphries": "kent@outware.com.au",
+    "Vishal Patel": "vishal.patel2@anz.com",
+    "Robert Wagstaff": "robert.wagstaff@anz.com",
+    "Stephen Yao": "stephen@outware.com",
+    "Adam Sharp": "adam.sharp@outware.com.au"
+  },
+  "license": {
+    "type": "No License",
+    "file": "LICENSE"
+  },
+  "source": {
+    "git": "git@gitlab.local:grow/ANZTestFoundation.git",
+    "tag": "1.37.0"
+  },
+  "platforms": {
+    "ios": "6.1"
+  },
+  "default_subspec": "Core",
+  "ios": {
+    "xcconfig": {
+      "FRAMEWORK_SEARCH_PATHS": "$(inherited) \"$(SDKROOT)/Developer/Library/Frameworks\" \"$(DEVELOPER_LIBRARY_DIR)/Frameworks\""
+    }
+  },
+  "requires_arc": true,
+  "dependencies": {
+    "Nocilla": [
+
+    ]
+  },
+  "subspecs": [
+    {
+      "name": "Core",
+      "dependencies": {
+        "Kiwi": [
+
+        ]
+      },
+      "source_files": "ANZTestFoundation/**/*.[hm]",
+      "frameworks": "SenTestingKit",
+      "prefix_header_contents": "#import <SenTestingKit/SenTestingKit.h>"
+    },
+    {
+      "name": "XCTest",
+      "dependencies": {
+        "Kiwi/XCTest": [
+
+        ]
+      },
+      "source_files": "ANZTestFoundation/**/*.[hm]",
+      "frameworks": "XCTest",
+      "prefix_header_contents": "#import <XCTest/XCTest.h>"
+    }
+  ]
+}

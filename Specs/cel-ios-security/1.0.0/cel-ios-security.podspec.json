@@ -1,0 +1,18 @@
+{
+  "name": "cel-ios-security",
+  "version": "1.0.0",
+  "homepage": "https://dev-repo.dev.com/svn/ios-projects/cel-pods/cel-ios-security",
+  "authors": {
+    "Ben Parks": "ben.parks@dev.com"
+  },
+  "license": {
+    "type": "MIT"
+  },
+  "summary": "Components that handle encryption.",
+  "source": {
+    "svn": "https://dev-repo.dev.com/svn/ios-projects/cel-pods/cel-ios-security",
+    "tag": "1.0.0"
+  },
+  "source_files": "CELIOSSecurity/*.{h,m}",
+  "requires_arc": true
+}

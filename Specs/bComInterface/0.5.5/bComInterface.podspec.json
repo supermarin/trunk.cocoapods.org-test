@@ -1,0 +1,50 @@
+{
+  "name": "bComInterface",
+  "version": "0.5.5",
+  "summary": "BCom Interface for ios Apps.",
+  "homepage": "http://EPLE/bComInterface",
+  "license": {
+    "type": "Custom",
+    "text": "Copyright (C) 2012 eCube GmbH"
+  },
+  "authors": {
+    "Ingo Koerber": "ingo.koerber@ecube.de"
+  },
+  "platforms": {
+    "ios": "5.0"
+  },
+  "source": {
+    "svn": "https://svn.ecube.de/svn/berner/holding/trunk/bMobile/ios/src/bComInterface"
+  },
+  "source_files": [
+    "bComInterface/*.h",
+    "bComInterface/bcom/*.{h,m}",
+    "bComInterface/dto/*.{h,m}",
+    "bComInterface/xml/*.{h,m}",
+    "bComInterface/utils/*.{h,m}",
+    "bComInterface/minizip/*.{h,c,m}"
+  ],
+  "requires_arc": true,
+  "prefix_header_file": "bComInterface/bComInterface-Prefix.pch",
+  "prefix_header_contents": "#import <SystemConfiguration/SystemConfiguration.h>\n#import <MobileCoreServices/MobileCoreServices.h>",
+  "frameworks": [
+    "Foundation",
+    "SystemConfiguration",
+    "UIKit"
+  ],
+  "libraries": [
+    "iconv",
+    "z"
+  ],
+  "dependencies": {
+    "AFNetworking": [
+      "1.1.0"
+    ],
+    "SBJson": [
+      "3.1.1"
+    ],
+    "Reachability": [
+      "3.0.0"
+    ]
+  }
+}

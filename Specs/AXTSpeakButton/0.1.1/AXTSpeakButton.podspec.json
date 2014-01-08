@@ -1,0 +1,30 @@
+{
+  "name": "AXTSpeakButton",
+  "version": "0.1.1",
+  "summary": "AXTSpeakButton For ALo7 AXT Project.",
+  "description": "                   \"AXTSpeakButton For ALo7 AXT Project，支持amr格式的录制跟播放.（长按删除录音）\"\n",
+  "homepage": "http://git.shuobaotang.com/sanji.yang/alo7speakbutton",
+  "license": {
+    "type": "GPL",
+    "file": "FILE_LICENSE"
+  },
+  "authors": {
+    "sanjiYang": "sanji.yang@saybot.com"
+  },
+  "platforms": {
+    "ios": "6.0"
+  },
+  "source": {
+    "git": "http://git.shuobaotang.com/sanji.yang/alo7speakbutton.git",
+    "tag": "0.1.1"
+  },
+  "source_files": [
+    "AXTSpeakButton",
+    "AXTSpeakButton/**/*.{h,m}"
+  ],
+  "frameworks": [
+    "AVFoundation",
+    "UIKit"
+  ],
+  "requires_arc": true
+}

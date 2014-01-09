@@ -1,0 +1,19 @@
+{
+  "license": "MIT",
+  "authors": {
+    "Matias Castro": "mattias.castro@gmail.com"
+  },
+  "version": "0.0.4",
+  "homepage": "https://github.com/amcastror/ColumnsLabel",
+  "summary": "A subclass of UILabel to distribute the text into multiple columns",
+  "requires_arc": true,
+  "platforms": {
+    "ios": "5.0"
+  },
+  "name": "ColumnsLabel",
+  "source_files": "Classes/ios/*.{h,m}",
+  "source": {
+    "git": "https://github.com/amcastror/ColumnsLabel.git",
+    "tag": "0.0.4"
+  }
+}

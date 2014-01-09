@@ -1,0 +1,19 @@
+{
+  "version": "0.0.5",
+  "summary": "A subclass of UIView, to simulate a UILabel that distributes the text into multiple columns",
+  "authors": {
+    "Matias Castro": "mattias.castro@gmail.com"
+  },
+  "name": "ColumnsLabel",
+  "homepage": "https://github.com/amcastror/ColumnsLabel",
+  "requires_arc": true,
+  "source": {
+    "git": "https://github.com/amcastror/ColumnsLabel.git",
+    "tag": "0.0.5"
+  },
+  "platforms": {
+    "ios": "5.0"
+  },
+  "source_files": "Classes/ios/*.{h,m}",
+  "license": "MIT"
+}

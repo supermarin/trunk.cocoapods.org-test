@@ -1,0 +1,31 @@
+{
+  "name": "ggxml",
+  "version": "0.1.1",
+  "summary": "A library for handling xml generation/parsing.",
+  "homepage": "http://fezasoft.com",
+  "license": "MIT",
+  "authors": {
+    "Mehmet Murat Sevim": "mehmetmuratsevim@gmail.com"
+  },
+  "source": {
+    "git": "http://git.fezasoft.com/ggxml.git",
+    "tag": "0.1.1"
+  },
+  "platforms": {
+    "ios": "6.0"
+  },
+  "requires_arc": false,
+  "source_files": "src/**/*.{h,m}",
+  "dependencies": {
+    "gglog": [
+
+    ],
+    "ggfoundation": [
+
+    ]
+  },
+  "libraries": "xml2",
+  "xcconfig": {
+    "HEADER_SEARCH_PATHS": "$(SDKROOT)/usr/include/libxml2"
+  }
+}

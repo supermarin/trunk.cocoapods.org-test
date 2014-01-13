@@ -1,0 +1,39 @@
+{
+  "name": "admob-sdk",
+  "platforms": {
+    "ios": "4.3"
+  },
+  "version": "6.5.1",
+  "summary": "Google AdMob Ads SDK.",
+  "description": "The Google AdMob Ads SDK allows developers to easily incorporate mobile-friendly text and image banners as well as rich, full-screen web apps known as interstitials.",
+  "homepage": "https://source.xing.com/ios/admob-sdk",
+  "authors": "Google Inc.",
+  "license": {
+    "type": "commercial",
+    "text": "Copyright 2009 - 2013 Google, Inc. All rights reserved."
+  },
+  "source": {
+    "git": "https://source.xing.com/ios/admob-sdk.git",
+    "tag": "6.5.1"
+  },
+  "preserve_paths": "libGoogleAdMobAds.a",
+  "source_files": [
+    "*.h",
+    "Add-ons/Search/*.h",
+    "Add-ons/Mediation/*.h",
+    "Add-ons/DoubleClick/*.h"
+  ],
+  "libraries": "GoogleAdMobAds",
+  "frameworks": [
+    "StoreKit",
+    "AudioToolbox",
+    "MessageUI",
+    "SystemConfiguration",
+    "CoreGraphics"
+  ],
+  "weak_frameworks": "AdSupport",
+  "xcconfig": {
+    "OTHER_LDFLAGS": "-ObjC",
+    "LIBRARY_SEARCH_PATHS": "\"$(SRCROOT)/Pods/admob-sdk\""
+  }
+}

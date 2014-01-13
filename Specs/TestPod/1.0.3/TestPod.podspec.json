@@ -1,0 +1,18 @@
+{
+  "name": "TestPod",
+  "version": "1.0.3",
+  "homepage": "https://dev-repo.dev.com/svn/test/TestPod",
+  "authors": {
+    "Ben Parks": "ben.parks@dev.com"
+  },
+  "license": {
+    "type": "MIT"
+  },
+  "summary": "A test pod file",
+  "source": {
+    "svn": "https://dev-repo.dev.com/svn/test/TestPod",
+    "tag": "1.0.3"
+  },
+  "source_files": "TestPod/*.{h,m}",
+  "requires_arc": true
+}

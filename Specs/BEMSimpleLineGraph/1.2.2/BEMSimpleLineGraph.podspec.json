@@ -1,0 +1,29 @@
+{
+  "authors": {
+    "Boris Emorine": "boris.emorine@gmail.com"
+  },
+  "source_files": [
+    "Classes",
+    "Classes/*.{h,m}"
+  ],
+  "summary": "iOS library to create simple line graphs/charts (charting library).",
+  "name": "BEMSimpleLineGraph",
+  "screenshots": [
+    "http://img843.imageshack.us/img843/3821/ru8f.png",
+    "http://img30.imageshack.us/img30/4479/gt3s.png"
+  ],
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "homepage": "https://github.com/Boris-Em/BEMSimpleLineGraph",
+  "source": {
+    "tag": "v1.2.2",
+    "git": "https://github.com/Boris-Em/BEMSimpleLineGraph.git"
+  },
+  "platforms": {
+    "ios": "6.0"
+  },
+  "version": "1.2.2",
+  "requires_arc": true
+}

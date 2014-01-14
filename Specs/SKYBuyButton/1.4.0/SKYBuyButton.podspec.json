@@ -1,0 +1,17 @@
+{
+  "name": "SKYBuyButton",
+  "version": "1.4.0",
+  "summary": "A button that mimics the look and functionality of the standard App Store buy button.",
+  "homepage": "http://idsvn.bskyb.com:1080/repositories/idev/iPhone/common/SKYBuyButton",
+  "license": "BSkyB",
+  "authors": "BSkyB",
+  "source": {
+    "svn": "http://idsvn.bskyb.com:1080/repositories/idev/iPhone/common/SKYBuyButton/tags/1.4.0"
+  },
+  "platforms": {
+    "ios": null
+  },
+  "source_files": "SKYBuyButton/Sources/*.{h,m}",
+  "frameworks": "QuartzCore",
+  "requires_arc": true
+}

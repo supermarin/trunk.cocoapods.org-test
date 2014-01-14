@@ -1,0 +1,23 @@
+{
+  "name": "MyScript-Math-Widget-iOS",
+  "version": "0.0.1",
+  "summary": "MyScript Math Widget for iOS",
+  "description": "MyScript Math Widget is an interactive input method, based on MyScript Equation SDK, enabling users to handwrite mathematical operations and equations, which are then typeset and can be solved by the widget.",
+  "homepage": "http://myscript.com/",
+  "license": {
+    "type": "Copyright",
+    "text": "Copyright 2013 MyScript"
+  },
+  "authors": {
+    "Simon Liotier": "simon.liotier@visionobjects.com"
+  },
+  "source": {
+    "http": "http://jenkins.visionobjects.com/job/MathWidgetIOS/177/artifact/Delivery/MyScript-math-widget-lib-ios.zip"
+  },
+  "platforms": {
+    "ios": "5.0"
+  },
+  "resources": "math-widget-lib/MathWidget.bundle",
+  "preserve_paths": "math-widget-lib/MathWidget.framework",
+  "public_header_files": "math-widget-lib/MathWidget.framework/Versions/A/Headers/*.h"
+}

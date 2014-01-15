@@ -1,0 +1,62 @@
+{
+  "name": "ANZUIKit",
+  "version": "3.38.8",
+  "summary": "ANZUIKit contains all UI components that can be shared across modules.",
+  "homepage": "http://appau227dev262.appdev.corptst.anz.com:8090/display/IDS/iOS+Development+Space+Home;jsessionid=2F37D05C4255791FE2E8642F793B8A98",
+  "authors": {
+    "Rochana Attale Don": "gayani.attaledon@anz.com",
+    "Michael Dove": "michael.dove@outware.com.au",
+    "Shaun Ervine": "shaun.ervine@anz.com",
+    "Bin Feng": "bin@outware.com.au",
+    "Alex Gvozdik": "alex@outware.com.au",
+    "Kent Humphries": "kent@outware.com.au",
+    "Vishal Patel": "vishal.patel2@anz.com",
+    "Robert Wagstaff": "robert.wagstaff@anz.com",
+    "Stephen Yao": "stephen@outware.com",
+    "Adam Sharp": "adam.sharp@outware.com.au"
+  },
+  "license": {
+    "type": "No License",
+    "file": "LICENSE"
+  },
+  "source": {
+    "git": "gitlab.local:grow/ANZUIKit.git",
+    "tag": "3.38.8"
+  },
+  "requires_arc": true,
+  "frameworks": [
+    "AssetsLibrary",
+    "CoreText",
+    "QuickLook",
+    "QuartzCore",
+    "Security",
+    "SystemConfiguration",
+    "CoreGraphics",
+    "AudioToolbox"
+  ],
+  "dependencies": {
+    "ANZFoundation": [
+      "~> 3.37"
+    ],
+    "ANZConfiguration": [
+      "~> 3.37"
+    ],
+    "Cordova/Base": [
+      "~> 3.1.0"
+    ]
+  },
+  "source_files": "ANZUIKit/**/*.{h,m}",
+  "platforms": {
+    "ios": "7.0"
+  },
+  "xcconfig": {
+    "GCC_GENERATE_TEST_COVERAGE_FILES": "YES",
+    "GCC_INSTRUMENT_PROGRAM_FLOW_ARCS": "YES"
+  },
+  "resource_bundles": {
+    "ANZUIKit": [
+      "ANZUIKit/**/*.{png,html,plist,ttf}",
+      "ANZUIKitResources/**/*.{png,html,plist,strings,ttf}"
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "PRZFlexible",
+  "version": "1.0.2",
+  "summary": "Расширенная функциональность UITableView.",
+  "description": "\t\t\t\t\t### `PRZLabel`\n\n\t\t\t\t\tUILabel с вертикальным выравниванием текста.\n\n\t\t\t\t\t* Выравнивание текста по верху, середине или низу.\n\t\t\t\t\t* Поддерживается работа с NSString и NSAttributedString.\n\n\t\t\t\t\t### `PRZFlexibleCell`\n\n\t\t\t\t\tМногоколоночный UITableViewCell.\n\n\t\t\t\t\t* Колонки фиксированной и произвольной ширины.\n\t\t\t\t\t* Колонки могут содержать текст, графику и вообще любой UIView.\n\n\t\t\t\t\t### `PRZHeaderCell`\n\n\t\t\t\t\tUITableViewHeaderFooterView с управлением сортировкой.\n",
+  "homepage": "http://v-nfbr-dev.prognoz.ru",
+  "screenshots": [
+    "www.example.com/screenshots_1",
+    "www.example.com/screenshots_2"
+  ],
+  "license": "MIT",
+  "authors": {
+    "Денис Либит": "libit@prognoz.ru"
+  },
+  "source": {
+    "git": "http://libit:ah1azd@v-nfbr-dev:8181/git/PRZFlexible.git",
+    "tag": "1.0.2"
+  },
+  "platforms": {
+    "ios": "6.1"
+  },
+  "requires_arc": true,
+  "source_files": "Classes/**/*",
+  "resources": "Assets",
+  "ios": {
+    "exclude_files": "Classes/osx"
+  },
+  "osx": {
+    "exclude_files": "Classes/ios"
+  }
+}

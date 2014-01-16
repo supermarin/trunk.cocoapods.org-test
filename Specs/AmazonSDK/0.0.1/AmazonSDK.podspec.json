@@ -1,0 +1,24 @@
+{
+  "name": "AmazonSDK",
+  "version": "0.0.1",
+  "summary": "AB Testing of AmazonInsights.",
+  "description": "A delightful ab testing framework by Amazon.com",
+  "homepage": "http://amazon.com",
+  "license": "MIT",
+  "authors": {
+    "dcilia": "dcilia@grubhubseamless.com"
+  },
+  "source": {
+    "git": "http://stash.grubhubseamless.com/scm/mob/amazonab.git",
+    "tag": "0.0.1"
+  },
+  "requires_arc": true,
+  "platforms": {
+    "ios": "6.0"
+  },
+  "public_header_files": "GHSAmazonInsights/*.h",
+  "source_files": "GHSAmazonInsights/GHSAmazonInsights.h",
+  "ios": {
+    "exclude_files": "Classes/osx"
+  }
+}

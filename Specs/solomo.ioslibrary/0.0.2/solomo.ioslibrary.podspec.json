@@ -1,0 +1,22 @@
+{
+  "name": "solomo.ioslibrary",
+  "version": "0.0.2",
+  "summary": "solomo.ioslibrary",
+  "description": "                    Internal library\n",
+  "homepage": "https://www.assembla.com/code/solomo/git-11/nodes",
+  "license": "MIT",
+  "authors": {
+    "Steven Woo": "swoo@tackable.com"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "source": {
+    "git": "git@git.assembla.com:solomo.ioslibrary.git",
+    "tag": "0.0.2"
+  },
+  "source_files": "solomo.ioslibrary/**/*.{h,m}",
+  "exclude_files": "Classes/Exclude",
+  "frameworks": "Foundation",
+  "requires_arc": true
+}

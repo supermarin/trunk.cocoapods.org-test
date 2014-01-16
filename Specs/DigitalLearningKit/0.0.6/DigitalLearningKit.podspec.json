@@ -1,0 +1,24 @@
+{
+  "description": "                   A longer description of DigitalLearningKit in Markdown format.\n\n                   * Think: Why did you write this? What is the focus? What does it do?\n                   * CocoaPods will be using this to generate tags, and improve search results.\n                   * Try to keep it short, snappy and to the point.\n                   * Finally, don't worry about the indent, CocoaPods strips it!\n",
+  "source_files": [
+    "DigitalLearningKit",
+    "DigitalLearningKit/**/*.{h,m}"
+  ],
+  "version": "0.0.6",
+  "name": "DigitalLearningKit",
+  "platforms": {
+    "ios": "7.0"
+  },
+  "source": {
+    "git": "https://github.disney.com/DDL/DigitalLearningKit",
+    "tag": "0.0.6"
+  },
+  "homepage": "https://github.disney.com/DDL/DigitalLearningKit",
+  "license": "Disney Confidential",
+  "summary": "DigitalLearningKit is an iOS library to integrate apps with the Disney web services.",
+  "frameworks": "XCTest",
+  "requires_arc": true,
+  "authors": {
+    "Pavel Sorokin": "Pavel.X.Sorokin@disney.com"
+  }
+}

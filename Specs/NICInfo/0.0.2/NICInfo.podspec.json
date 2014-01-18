@@ -1,0 +1,24 @@
+{
+  "version": "0.0.2",
+  "license": {
+    "type": "BSD",
+    "file": "COPYING"
+  },
+  "authors": {
+    "kenial": "keniallee@gmail.com"
+  },
+  "source_files": "src/nicinfo_example/NICInfo Classes/*.{h,m}",
+  "source": {
+    "hg": "https://bitbucket.org/kenial/nicinfo"
+  },
+  "description": "                   NICInfo is an class for getting network interface card(NIC) information instantly.\n\n                   * These codes are under BSD-style license. Use as you want.\n                   * This class provides IPv4, netmask, broadcast IP, and MAC address.\n                   * Above iOS 7, getting MAC address won't work. Refers to: https://developer.apple.com/library/ios/releasenotes/General/RN-iOSSDK-7.0/#//apple_ref/doc/uid/TP40013202-CH1-SW33\n",
+  "summary": "NICInfo is an class for getting network interface card(NIC) information instantly.",
+  "screenshots": "https://bitbucket.org/kenial/nicinfo/downloads/NICInfo.png",
+  "requires_arc": false,
+  "homepage": "https://bitbucket.org/kenial/nicinfo",
+  "platforms": {
+    "osx": "10.5",
+    "ios": "5.0"
+  },
+  "name": "NICInfo"
+}

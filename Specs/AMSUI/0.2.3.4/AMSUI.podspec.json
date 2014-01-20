@@ -1,0 +1,25 @@
+{
+  "name": "AMSUI",
+  "version": "0.2.3.4",
+  "summary": "AMSUI - UI Utilities",
+  "homepage": "https://scm.webinmotion.de/projects/PODS/repos/amsui/",
+  "license": {
+    "type": "adesso mobile solutions",
+    "text": "  \tCopyright (C) 2012 adesso mobile solutions GmbH\n    All rights reserved.\n"
+  },
+  "authors": "adesso mobile solutions GmbH",
+  "platforms": {
+    "ios": "5.0"
+  },
+  "source": {
+    "git": "ssh://git@scm.webinmotion.de:7999/pods/amsui.git",
+    "tag": "0.2.3.4"
+  },
+  "source_files": [
+    "Classes",
+    "*.{h,m}"
+  ],
+  "public_header_files": "*.h",
+  "frameworks": "CoreGraphics",
+  "requires_arc": true
+}

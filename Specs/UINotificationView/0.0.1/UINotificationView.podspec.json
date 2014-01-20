@@ -1,0 +1,22 @@
+{
+  "name": "UINotificationView",
+  "version": "0.0.1",
+  "summary": "Present Notification Views",
+  "license": "BSD",
+  "homepage": "https://github.com/mwildeboer/UINotificationView",
+  "authors": {
+    "Menno Wildeboer": "ome.menno@gmail.com"
+  },
+  "requires_arc": true,
+  "platforms": {
+    "ios": "7.0"
+  },
+  "source": {
+    "git": "https://github.com/mwildeboer/UINotificationView.git",
+    "tag": "0.0.1"
+  },
+  "source_files": [
+    "UINotificationView",
+    "UINotificationView/**/*.{h,m}"
+  ]
+}

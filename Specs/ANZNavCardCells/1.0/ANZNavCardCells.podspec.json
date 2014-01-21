@@ -1,0 +1,36 @@
+{
+  "name": "ANZNavCardCells",
+  "version": "1.0",
+  "summary": "UICollectionViewCell subclasses with custom layout for Grow iOS 7.",
+  "homepage": "http://gitlab.local/grow/ANZNavCardCells",
+  "license": "Commercial proprietary ANZ use only",
+  "authors": {
+    "Chris Miles": "miles.chris@gmail.com"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "source": {
+    "git": "gitlab.local:grow/ANZNavCardCells.git",
+    "tag": "1.0"
+  },
+  "dependencies": {
+    "ANZImageCache": [
+      "~> 1.0"
+    ],
+    "ANZImageEffects": [
+      "~> 1.0"
+    ]
+  },
+  "requires_arc": true,
+  "source_files": "ANZNavCardCells/ANZNavCardCells/Source",
+  "prefix_header_file": "ANZNavCardCells/ANZNavCardCells/Source/ANZNavCardCells-Prefix.pch",
+  "public_header_files": [
+    "ANZNavCardCells/ANZNavCardCells/Source/ANZNavCardCells.h",
+    "ANZNavCardCells/ANZNavCardCells/Source/ANZNavCardLogoOnWhiteCell.h",
+    "ANZNavCardCells/ANZNavCardCells/Source/ANZNavCardSeparatedTitlesCell.h",
+    "ANZNavCardCells/ANZNavCardCells/Source/ANZNavCardTitleOnBlurCell.h",
+    "ANZNavCardCells/ANZNavCardCells/Source/ANZNavCardTitlesView.h"
+  ],
+  "compiler_flags": "-fmodules"
+}

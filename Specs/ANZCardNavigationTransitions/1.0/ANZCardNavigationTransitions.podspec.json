@@ -1,0 +1,31 @@
+{
+  "name": "ANZCardNavigationTransitions",
+  "version": "1.0",
+  "summary": "Custom navigation controller push transitions that work with ANZCardNavigation.",
+  "homepage": "http://gitlab.local/grow/ANZCardNavigationTransitions",
+  "license": "Commercial proprietary ANZ use only",
+  "authors": {
+    "Chris Miles": "miles.chris@gmail.com"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "source": {
+    "git": "gitlab.local:grow/ANZCardNavigationTransitions.git",
+    "tag": "1.0"
+  },
+  "dependencies": {
+    "ANZCardNavigation": [
+      "~> 1.1"
+    ]
+  },
+  "requires_arc": true,
+  "source_files": "ANZCardNavigationTransitions/ANZCardNavigationTransitions/Source",
+  "public_header_files": [
+    "ANZCardNavigationTransitions/ANZCardNavigationTransitions/Source/ANZCardNavigationTransitions.h",
+    "ANZCardNavigationTransitions/ANZCardNavigationTransitions/Source/ANZCardNavTransitionController.h",
+    "ANZCardNavigationTransitions/ANZCardNavigationTransitions/Source/ANZCardNavigationContentSlideTransitioning.h"
+  ],
+  "compiler_flags": "-fmodules",
+  "prefix_header_file": "ANZCardNavigationTransitions/ANZCardNavigationTransitions/Source/ANZCardNavigationTransitions-Prefix.pch"
+}

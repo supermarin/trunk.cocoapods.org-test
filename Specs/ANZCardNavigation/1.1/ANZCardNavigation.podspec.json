@@ -1,0 +1,26 @@
+{
+  "name": "ANZCardNavigation",
+  "version": "1.1",
+  "summary": "A grid-based card collection view layout, with springy physics dynamics.",
+  "homepage": "http://gitlab.local/grow/ANZCardNavigation",
+  "license": "Commercial proprietary ANZ use only",
+  "authors": {
+    "Chris Miles": "miles.chris@gmail.com"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "source": {
+    "git": "gitlab.local:grow/ANZCardNavigation.git",
+    "tag": "1.1"
+  },
+  "requires_arc": true,
+  "source_files": "ANZCardNavigation/ANZCardNavigation/Source",
+  "public_header_files": [
+    "ANZCardNavigation/ANZCardNavigation/Source/ANZCardNavigation.h",
+    "ANZCardNavigation/ANZCardNavigation/Source/ANZCardNavSpringyCollectionViewLayout.h",
+    "ANZCardNavigation/ANZCardNavigation/Source/ANZCardNavCollectionViewLayout.h"
+  ],
+  "compiler_flags": "-fmodules",
+  "prefix_header_file": "ANZCardNavigation/ANZCardNavigation/Source/ANZCardNavigation-Prefix.pch"
+}

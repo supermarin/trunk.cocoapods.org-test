@@ -1,0 +1,22 @@
+{
+  "name": "ANZImageCache",
+  "version": "1.0",
+  "summary": "Cache images to memory and disk.",
+  "homepage": "http://gitlab.local/grow/ANZImageCache",
+  "license": "Commercial proprietary ANZ use only",
+  "authors": {
+    "Chris Miles": "miles.chris@gmail.com"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "source": {
+    "git": "gitlab.local:grow/ANZImageCache.git",
+    "tag": "1.0"
+  },
+  "requires_arc": true,
+  "source_files": "ANZImageCache/ANZImageCache/Source",
+  "public_header_files": "ANZImageCache/ANZImageCache/Source/ANZImageCache.h",
+  "compiler_flags": "-fmodules",
+  "prefix_header_file": "ANZImageCache/ANZImageCache/Source/ANZImageCache-Prefix.pch"
+}

@@ -1,0 +1,29 @@
+{
+  "name": "ANZLoadingScreen",
+  "version": "1.0",
+  "summary": "Presents an ANZ styled animated interactive loading screen.",
+  "homepage": "http://gitlab.local/grow/ANZLoadingScreen",
+  "license": "Commercial proprietary ANZ use only",
+  "authors": {
+    "Chris Miles": "miles.chris@gmail.com"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "source": {
+    "git": "gitlab.local:grow/ANZLoadingScreen.git",
+    "tag": "1.0"
+  },
+  "requires_arc": true,
+  "prepare_command": "      xcodebuild -project ANZLoadingScreen/ANZLoadingScreen.xcodeproj -target ANZLoadingScreenResources -configuration Release build CONFIGURATION_BUILD_DIR=../build\n",
+  "source_files": [
+    "ANZLoadingScreen/ANZLoadingScreen/Source",
+    "ANZLoadingScreen/ANZLoadingScreenResources/*.{h,m}"
+  ],
+  "public_header_files": [
+    "ANZLoadingScreen/ANZLoadingScreen/Source/ANZLoadingScreen.h",
+    "ANZLoadingScreen/ANZLoadingScreen/Source/ANZLoadingScreenController.h"
+  ],
+  "resources": "build/ANZLoadingScreenResources.bundle",
+  "compiler_flags": "-fmodules"
+}

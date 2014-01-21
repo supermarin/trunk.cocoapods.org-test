@@ -1,0 +1,37 @@
+{
+  "name": "ANZPinAuthenticationScreen",
+  "version": "1.0",
+  "summary": "Presents an ANZ styled PIN entry screen.",
+  "homepage": "http://gitlab.local/grow/ANZPinAuthenticationScreen",
+  "license": "Commercial proprietary ANZ use only",
+  "authors": {
+    "Chris Miles": "miles.chris@gmail.com"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "source": {
+    "git": "gitlab.local:grow/ANZPinAuthenticationScreen.git",
+    "tag": "1.0"
+  },
+  "requires_arc": true,
+  "prepare_command": "      xcodebuild -project ANZPinAuthenticationScreen/ANZPinAuthenticationScreen.xcodeproj -target ANZPinAuthenticationScreenResources -configuration Release build CONFIGURATION_BUILD_DIR=../build\n",
+  "source_files": [
+    "ANZPinAuthenticationScreen/ANZPinAuthenticationScreen/Source",
+    "ANZPinAuthenticationScreen/ANZPinAuthenticationScreenResources/*.{h,m}"
+  ],
+  "public_header_files": [
+    "ANZPinAuthenticationScreen/ANZPinAuthenticationScreen/Source/ANZPinAuthenticationScreen.h",
+    "ANZPinAuthenticationScreen/ANZPinAuthenticationScreen/Source/ANZPinPresentationController.h",
+    "ANZPinAuthenticationScreen/ANZPinAuthenticationScreen/Source/ANZPinAuthenticationScreenConstants.h",
+    "ANZPinAuthenticationScreen/ANZPinAuthenticationScreen/Source/UICollectionViewController+ANZPulseAfterPIN.h"
+  ],
+  "resources": "build/ANZPinAuthenticationScreenResources.bundle",
+  "compiler_flags": "-fmodules",
+  "prefix_header_file": "ANZPinAuthenticationScreen/ANZPinAuthenticationScreen/Source/ANZPinAuthenticationScreen-Prefix.pch",
+  "dependencies": {
+    "ANZImageEffects": [
+      "~> 1.0"
+    ]
+  }
+}

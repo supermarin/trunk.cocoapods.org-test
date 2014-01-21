@@ -1,0 +1,26 @@
+{
+  "name": "ANZActionPanel",
+  "version": "1.0",
+  "summary": "Presents a sliding panel of action buttons.",
+  "homepage": "http://gitlab.local/grow/ANZActionPanel",
+  "license": "Commercial proprietary ANZ use only",
+  "authors": {
+    "Chris Miles": "miles.chris@gmail.com"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "source": {
+    "git": "gitlab.local:grow/ANZActionPanel.git",
+    "tag": "1.0"
+  },
+  "requires_arc": true,
+  "source_files": "ANZActionPanel/ANZActionPanel/Source",
+  "public_header_files": [
+    "ANZActionPanel/ANZActionPanel/Source/ANZActionPanel.h",
+    "ANZActionPanel/ANZActionPanel/Source/ANZActionPanelButton.h",
+    "ANZActionPanel/ANZActionPanel/Source/ANZActionPanelController.h"
+  ],
+  "compiler_flags": "-fmodules",
+  "prefix_header_file": "ANZActionPanel/ANZActionPanel/Source/ANZActionPanel-Prefix.pch"
+}

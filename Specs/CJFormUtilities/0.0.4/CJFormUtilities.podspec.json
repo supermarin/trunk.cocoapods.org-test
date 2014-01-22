@@ -1,0 +1,26 @@
+{
+  "name": "CJFormUtilities",
+  "version": "0.0.4",
+  "license": {
+    "type": "COMMERCIAL",
+    "text": "LICENSE.txt"
+  },
+  "summary": "iOS Form utilities",
+  "homepage": "https://bitbucket.org/conjure/cjformutilities",
+  "authors": {
+    "Filippo Tosetto": "filippo.tosetto@gmail.com",
+    "Chris Tingley": "chris.tingley@conjure.co.uk",
+    "Claire Knight": "claire.knight@conjure.co.uk",
+    "Ross Beale": "ross.beale@conjure.co.uk",
+    "Steve Smith": "steve.smith@conjure.co.uk"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "source": {
+    "git": "https://bitbucket.org/conjure/cjformutilities.git",
+    "tag": "0.0.4"
+  },
+  "source_files": "Library/*.{h,m}",
+  "requires_arc": true
+}

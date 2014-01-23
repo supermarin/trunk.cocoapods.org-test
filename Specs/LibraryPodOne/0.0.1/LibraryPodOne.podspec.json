@@ -1,0 +1,25 @@
+{
+  "ios": {
+    "exclude_files": "Classes/osx"
+  },
+  "platforms": {
+    "ios": null
+  },
+  "source_files": "LibraryPodOne.*",
+  "license": "MIT",
+  "summary": "Test pod one.",
+  "homepage": "http://www.google.com",
+  "authors": {
+    "Bret Deasy": "bjdeasy@gmail.com"
+  },
+  "name": "LibraryPodOne",
+  "osx": {
+    "exclude_files": "Classes/ios"
+  },
+  "version": "0.0.1",
+  "source": {
+    "git": "/Users/training6/Dropbox/Coursera/Developing iOS 7/CocoaPodsExample/LibraryPodOne/LibraryPodOne/.git",
+    "tag": "0.0.1"
+  },
+  "requires_arc": true
+}

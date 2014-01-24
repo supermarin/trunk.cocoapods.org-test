@@ -1,0 +1,30 @@
+{
+  "name": "UIImageView-FastImageCache",
+  "version": "0.1.1",
+  "summary": "A Simple Wrapper With FastImageCache (released by Path Inc)",
+  "description": "                    UIImageView+FastImageCache\n\n                    * Markdown format.\n                    * Don't worry about the indent, we strip it!\n",
+  "homepage": "https://github.com/pan286/UIImageView-FastImageCache",
+  "screenshots": [
+    "www.example.com/screenshots_1",
+    "www.example.com/screenshots_2"
+  ],
+  "license": "MIT",
+  "authors": {
+    "pan286": "pan286@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/pan286/UIImageView-FastImageCache.git",
+    "tag": "0.1.1"
+  },
+  "platforms": {
+    "ios": "6.0"
+  },
+  "source_files": "Classes/ios/*.{h,m}",
+  "public_header_files": "Classes/**/UIImageView+FastImageCache.h",
+  "dependencies": {
+    "FastImageCache": [
+      "~> 1.2"
+    ]
+  },
+  "requires_arc": true
+}

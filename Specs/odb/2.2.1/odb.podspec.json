@@ -1,0 +1,33 @@
+{
+  "name": "odb",
+  "version": "2.2.1",
+  "summary": "A C++ Object-Relational Mapping",
+  "description": "                   ODB is an open-source, cross-platform, and cross-database\n                   object-relational mapping (ORM) system for C++. It allows you to\n                   persist C++ objects to a relational database without having to\n                   deal with tables, columns, or SQL and without manually writing\n                   any mapping code. ODB supports MySQL, SQLite, PostgreSQL,\n                   Oracle, and Microsoft SQL Server relational databases as well\n                   as C++98/03 and C++11 language standards. It also comes with\n                   optional profiles for Boost and Qt which allow you to seamlessly\n                   use value types, containers, and smart pointers from these\n                   libraries in your persistent C++ classes. \n",
+  "homepage": "http://www.codesynthesis.com/products/odb",
+  "license": "GPL2",
+  "authors": {
+    "waTeim": "truthset@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/Clstroud/odb.git",
+    "tag": "2.2.1"
+  },
+  "platforms": {
+    "osx": "10.6"
+  },
+  "requires_arc": false,
+  "vendored_libraries": "lib/*.a",
+  "source_files": "src/*.{c}",
+  "public_header_files": "include/**/*.{h,hxx,txx,ixx}",
+  "preserve_paths": [
+    "src",
+    "include",
+    "include/compilers",
+    "include/compilers/vc",
+    "include/details",
+    "include/details/meta",
+    "include/details/posix",
+    "include/details/shared-ptr",
+    "include/tr1"
+  ]
+}

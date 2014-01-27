@@ -1,0 +1,25 @@
+{
+  "requires_arc": true,
+  "name": "AVTagTextView",
+  "homepage": "https://github.com/arsonic/AVTagTextView",
+  "screenshots": "https://dl.dropboxusercontent.com/u/31058381/OpenSource/AVTagTextView/screenshot.png",
+  "license": "MIT",
+  "source_files": "Classes",
+  "dependencies": {
+    "ReactiveCocoa": [
+
+    ]
+  },
+  "summary": "A category that adds an instragram-like hashtag choosing/listing capability to the UITextView",
+  "source": {
+    "tag": "0.1.0",
+    "git": "https://github.com/arsonic/AVTagTextView.git"
+  },
+  "platforms": {
+    "ios": "6.1"
+  },
+  "version": "0.1.0",
+  "authors": {
+    "Arsonic": "vershinin.arseniy@gmail.com"
+  }
+}

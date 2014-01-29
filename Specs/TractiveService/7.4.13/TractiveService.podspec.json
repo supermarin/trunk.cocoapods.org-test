@@ -1,0 +1,25 @@
+{
+  "name": "TractiveService",
+  "version": "7.4.13",
+  "summary": "The Tractive Service Library.",
+  "homepage": "http://www.tractive.com/",
+  "license": "COMMERCIAL",
+  "authors": {
+    "Christoph Wimberger": "christoph.wimberger@tractive.com"
+  },
+  "source": {
+    "git": "ssh://git@stash.tractive.com:4021/coi/service.git",
+    "tag": "7.4.13"
+  },
+  "platforms": {
+    "ios": "6.0"
+  },
+  "source_files": "service",
+  "frameworks": "Foundation",
+  "requires_arc": true,
+  "dependencies": {
+    "TractiveCore": [
+      "~> 4.0"
+    ]
+  }
+}

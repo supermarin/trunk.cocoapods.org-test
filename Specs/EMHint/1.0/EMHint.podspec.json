@@ -1,0 +1,23 @@
+{
+  "name": "EMHint",
+  "version": "1.0",
+  "summary": "EMHint adds multiple spotlight-like effects to a view  hinting at some things that may be important on the screen.",
+  "description": "EMHint is an iOS class group that easily adds a spotlight-like effect to a view highlighting or hinting at something that may be important on the screen.The protocols of EMHintDelegate allow users to override many of the default actions and views. Tapping the black overlay fades it away. Great for quick 'how to' or tutorials in your app",
+  "homepage": "https://github.com/mcconkiee/EMHint",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Eric McConkie": "eric@ericmcconkie.com"
+  },
+  "platforms": {
+    "ios": "6.0"
+  },
+  "source": {
+    "git": "https://github.com/mcconkiee/EMHint.git",
+    "tag": "1.0"
+  },
+  "source_files": "HintMakerExample",
+  "requires_arc": false
+}

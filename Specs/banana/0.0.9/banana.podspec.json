@@ -1,0 +1,26 @@
+{
+  "name": "banana",
+  "version": "0.0.9",
+  "summary": "pod banana is a pod to print bananas",
+  "homepage": "http://leonardowf.me",
+  "screenshots": [
+    "www.example.com/screenshots_1",
+    "www.example.com/screenshots_2"
+  ],
+  "license": "MIT",
+  "authors": {
+    "Leonardo Wistuba": "leonardo.wistuba@agivis.com.br"
+  },
+  "source": {
+    "git": "https://github.com/leonardowf/banana.git",
+    "tag": "0.0.9"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "requires_arc": true,
+  "source_files": "Classes/**/*.{h,m}",
+  "ios": {
+    "exclude_files": "Classes/osx"
+  }
+}

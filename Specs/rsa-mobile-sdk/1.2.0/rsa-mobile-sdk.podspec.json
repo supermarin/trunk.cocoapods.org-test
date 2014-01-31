@@ -1,0 +1,31 @@
+{
+  "name": "rsa-mobile-sdk",
+  "version": "1.2.0",
+  "summary": "RSA Mobile Adaptive Authentication Module",
+  "description": "                    RSA Mobile SDK Adaptive Authentication Module provides collection methods which \n                    support risk-based authentication of users accessing online transaction \n                    applications by way of a mobile device. \n                    Mobile SDK Adaptive Authentication Module is designed to be embedded in the \n                    customer mobile application and affords authentication through device \n                    identification and location awareness. Mobile SDK Adaptive Authentication Module\n                    powers the Mobile Channel Protection Module which is an extension of RSA \n                    Adaptive Authentication and compliments the web channel protection module.\n",
+  "homepage": "https://community.emc.com/community/labs/rsa_mobile_authentication",
+  "license": {
+    "type": "Copyright",
+    "text": "        Copyright © 2012 EMC Corporation. All Rights Reserved. Published in the USA.\n"
+  },
+  "authors": "EMC Corporation",
+  "source": {
+    "git": "git@gitlab.ideaknow.com:sabadell/rsa-mobile-sdk-ios.git",
+    "tag": "1.2.0"
+  },
+  "platforms": {
+    "ios": "5.0"
+  },
+  "requires_arc": true,
+  "source_files": "inc/MobileAPI.h",
+  "preserve_paths": "lib/libRSAMobileSDK-universal.a",
+  "frameworks": [
+    "CoreLocation",
+    "CoreTelephony",
+    "AddressBook"
+  ],
+  "libraries": "RSAMobileSDK-universal",
+  "xcconfig": {
+    "LIBRARY_SEARCH_PATHS": "\"$(PODS_ROOT)/rsa-mobile-sdk/lib\""
+  }
+}

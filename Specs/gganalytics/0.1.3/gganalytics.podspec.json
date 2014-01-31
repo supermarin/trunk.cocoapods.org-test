@@ -1,0 +1,40 @@
+{
+  "name": "gganalytics",
+  "version": "0.1.3",
+  "summary": "A wrapper library for google analytics.",
+  "homepage": "http://fezasoft.com",
+  "license": "MIT",
+  "authors": {
+    "Mehmet Murat Sevim": "mehmetmuratsevim@gmail.com"
+  },
+  "source": {
+    "git": "http://git.fezasoft.com/gganalytics.git",
+    "tag": "0.1.3"
+  },
+  "platforms": {
+    "ios": "6.0"
+  },
+  "requires_arc": true,
+  "default_subspec": "core",
+  "subspecs": [
+    {
+      "name": "api",
+      "source_files": "src/api/**/*.{h,m,mm}"
+    },
+    {
+      "name": "core",
+      "source_files": "src/core/**/*.{h,m,mm}",
+      "dependencies": {
+        "gganalytics/api": [
+
+        ],
+        "gglog": [
+
+        ],
+        "GoogleAnalytics-iOS-SDK": [
+          "1.5.1"
+        ]
+      }
+    }
+  ]
+}

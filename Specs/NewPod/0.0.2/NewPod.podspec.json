@@ -1,0 +1,20 @@
+{
+  "name": "NewPod",
+  "version": "0.0.2",
+  "summary": "A collection of useful Foundation and UIKit framework categories.",
+  "homepage": "https://github.com/hlung/NewPod",
+  "license": "MIT",
+  "authors": {
+    "Hlung": "thongchaikol@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/hlung/NewPod.git",
+    "tag": "0.0.2"
+  },
+  "platforms": {
+    "ios": "6.0"
+  },
+  "requires_arc": true,
+  "source_files": "Classes/NewPod.h",
+  "frameworks": "Foundation"
+}

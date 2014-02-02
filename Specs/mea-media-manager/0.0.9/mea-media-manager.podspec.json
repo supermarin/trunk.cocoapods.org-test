@@ -1,0 +1,32 @@
+{
+  "name": "mea-media-manager",
+  "version": "0.0.9",
+  "summary": "Camera, image and video capture functionality for iOS.",
+  "description": "                   Camera, image and video capture functionality for iOS.\n                   Requires libtiff and the MEA Filter Framework\n",
+  "license": "MEA",
+  "homepage": "https://bitbucket.org/MEAM/mea-media-manager/wiki",
+  "authors": "Evan Sunley James",
+  "platforms": {
+    "ios": "6.1"
+  },
+  "requires_arc": true,
+  "source": {
+    "git": "https://bitbucket.org/MEAM/mea-media-manager",
+    "tag": "0.0.9"
+  },
+  "source_files": "MEA Media Manager",
+  "exclude_files": "Classes/Exclude",
+  "frameworks": [
+    "AVFoundation",
+    "CoreVideo"
+  ],
+  "libraries": "tiff",
+  "dependencies": {
+    "NYXImagesKit": [
+      "~> 2.3"
+    ],
+    "mea-filter-framework": [
+
+    ]
+  }
+}

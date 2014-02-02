@@ -1,0 +1,18 @@
+{
+  "name": "DummyLibrary",
+  "version": "1.0.0",
+  "summary": "DummyLibrary bla bla.",
+  "description": "  \t\t   Dummy dummy dummy. dumdumdumddum uaid aihd 'asihd' asdha s\nasoudha;shda;sodhuas;odhu\n",
+  "homepage": "http://dummy.eu/DummyLibrary",
+  "license": "MIT",
+  "authors": {
+    "Guillaume Algis": "guillaume.algis@gmail.com"
+  },
+  "source": {
+    "git": "/Users/guillaume/Projets/so-21415658/DummyLibraryPod",
+    "tag": "1.0.0"
+  },
+  "resources": "*.png",
+  "source_files": "*.h",
+  "vendored_libraries": "libDummy.a"
+}

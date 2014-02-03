@@ -1,0 +1,23 @@
+{
+  "name": "BCFakeURLLoader",
+  "version": "0.1.1",
+  "summary": "Fake loading URLs from patterns.",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Tim Potter": "tpot@booleancandy.com.au"
+  },
+  "homepage": "https://bitbucket.org/booleancandy/bcfakeurlloader",
+  "source": {
+    "git": "ssh://git@bitbucket.org/booleancandy/bcfakeurlloader.git",
+    "tag": "v0.1.1"
+  },
+  "source_files": "BCFakeURLLoader/*.[hm]",
+  "dependencies": {
+    "SOCKit": [
+
+    ]
+  }
+}

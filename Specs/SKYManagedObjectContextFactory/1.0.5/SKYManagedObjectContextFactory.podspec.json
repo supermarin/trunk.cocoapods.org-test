@@ -1,0 +1,17 @@
+{
+  "name": "SKYManagedObjectContextFactory",
+  "version": "1.0.5",
+  "summary": "Factory encapsulating boilerplate for CoreData stack and ManagedObjectContext creation.",
+  "homepage": "http://idsvn.bskyb.com:1080/repositories/idev/iPhone/common/SKYManagedObjectContextFactory",
+  "license": "BSkyB",
+  "authors": "BSkyB",
+  "source": {
+    "svn": "http://idsvn.bskyb.com:1080/repositories/idev/iPhone/common/SKYManagedObjectContextFactory/tags/1.0.5"
+  },
+  "platforms": {
+    "ios": "6.1"
+  },
+  "source_files": "SKYManagedObjectContextFactory/Classes",
+  "frameworks": "CoreData",
+  "requires_arc": true
+}

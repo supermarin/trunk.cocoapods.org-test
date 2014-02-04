@@ -1,0 +1,32 @@
+{
+  "name": "JMURLCache",
+  "version": "1.0.3",
+  "summary": "A short summary of JMURLCache.",
+  "description": "                    No description placeholder for JMURLCache.\n",
+  "homepage": "http://www.i-pol.com",
+  "screenshots": [
+    "http://www.i-pol.com",
+    "http://www.i-pol.com"
+  ],
+  "license": "MIT",
+  "authors": {
+    "Josef Materi": "josef.materi@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/jaylib/JMURLCache.git",
+    "tag": "1.0.3"
+  },
+  "platforms": {
+    "ios": "6.0"
+  },
+  "requires_arc": true,
+  "source_files": "Classes/*.{h,m}",
+  "dependencies": {
+    "AFNetworking": [
+
+    ],
+    "Reachability": [
+
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "IDKBeaconManager",
+  "version": "1.0.0",
+  "summary": "iOS library for iBeacon devices",
+  "homepage": "http://gitlab.ideaknow.com/ideaknow/beacon-manager-ios",
+  "license": {
+    "type": "Copyright",
+    "text": "          Copyright © 2014 Ideaknow. All Rights Reserved.\n"
+  },
+  "authors": {
+    "Xavier Jurado": "xavier.jurado@ideaknow.com",
+    "Oscar Salas": "oscar.salas@ideaknow.com"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "source": {
+    "git": "git@gitlab.ideaknow.com:ideaknow/beacon-manager-ios.git",
+    "tag": "1.0.0"
+  },
+  "source_files": "IDKBeaconManager/*.{h,m}",
+  "public_header_files": "IDKBeaconManager/IDKBeaconManager.h",
+  "frameworks": [
+    "CoreLocation",
+    "CoreBluetooth"
+  ],
+  "requires_arc": true
+}

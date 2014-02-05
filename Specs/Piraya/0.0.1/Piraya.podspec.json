@@ -1,0 +1,38 @@
+{
+  "name": "Piraya",
+  "summary": "Piraya SDK",
+  "homepage": "https://github.com/TitouanVanBelle/Pod.git",
+  "authors": "Brendon Blackwell & Titouan Van Belle",
+  "license": {
+    "type": "Copyright",
+    "file": "./LICENSE"
+  },
+  "version": "0.0.1",
+  "platforms": {
+    "ios": "7.0"
+  },
+  "prefix_header_file": "Piraya-Pod/Piraya-Pod-Prefix.pch",
+  "source_files": "Piraya-Pod/**/*.{h,m}",
+  "requires_arc": true,
+  "source": {
+    "git": "https://github.com/TitouanVanBelle/Pod.git",
+    "tag": "0.0.1"
+  },
+  "dependencies": {
+    "Facebook-iOS-SDK": [
+
+    ],
+    "google-plus-ios-sdk": [
+
+    ]
+  },
+  "ios": {
+    "frameworks": [
+      "GoogleOpenSource",
+      "GooglePlus"
+    ]
+  },
+  "xcconfig": {
+    "FRAMEWORK_SEARCH_PATHS": "\"$(PODS_ROOT)/google-plus-ios-sdk/google-plus-ios-sdk-1.5.0\""
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "DMMultiDelegatesProxy",
+  "version": "0.1.0",
+  "summary": "Multiple delegate architecture made using NSProxy both for iOS and OSX",
+  "description": "                    DMMultiDelegatesProxy is an NSProxy which allows you to set multiple delegates to any object. Provided example show how to register two classes for some UIScrollView's delegate events; it' pretty easy. A detailed intro is available [into this post](http://danielemargutti.com/in/multiple-delegates-in-objective-c/)\n",
+  "homepage": "http://danielemargutti.com/in/multiple-delegates-in-objective-c/",
+  "screenshots": "",
+  "license": "MIT",
+  "authors": {
+    "Daniele Margutti": "me@danielemargutti.com"
+  },
+  "source": {
+    "git": "https://github.com/malcommac/DMMultiDelegatesProxy.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "5.0",
+    "osx": "10.7"
+  },
+  "requires_arc": true,
+  "source_files": "Classes/**/*.{h,m}",
+  "ios": {
+    "exclude_files": "Classes/osx"
+  },
+  "osx": {
+    "exclude_files": "Classes/ios"
+  },
+  "public_header_files": "Classes/**/*.h"
+}

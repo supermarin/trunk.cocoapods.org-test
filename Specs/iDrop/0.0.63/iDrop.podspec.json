@@ -1,0 +1,35 @@
+{
+  "name": "iDrop",
+  "version": "0.0.63",
+  "summary": "Objective-C wrapper for the Dropbox iOS SDK",
+  "homepage": "http://github.com/shadowthekid/iDrop",
+  "license": "MIT",
+  "authors": {
+    "shadowthekid": "conronb@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/shadowthekid/iDrop.git",
+    "tag": "0.0.63"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "requires_arc": true,
+  "source_files": "Classes/*.h",
+  "public_header_files": "Classes/*.h",
+  "dependencies": {
+    "Dropbox-iOS-SDK": [
+
+    ],
+    "Dropbox-Sync-API-SDK": [
+
+    ]
+  },
+  "frameworks": [
+    "CFNetwork",
+    "Security",
+    "SystemConfiguration",
+    "QuartzCore"
+  ],
+  "libraries": "c++"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "APTToolBox",
+  "version": "1.0.0",
+  "license": "MIT",
+  "summary": "Apperto In House ToolBox",
+  "homepage": "http://www.apperto.com/",
+  "authors": "Apperto",
+  "source": {
+    "git": "git@codebasehq.com:apperto/toolbox/toolbox-ios.git",
+    "tag": "1.0.0"
+  },
+  "platforms": {
+    "ios": "6.0"
+  },
+  "requires_arc": true,
+  "source_files": "APTToolBox/1.0.0/*.{h,m}"
+}

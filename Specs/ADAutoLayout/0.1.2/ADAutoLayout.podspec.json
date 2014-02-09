@@ -1,0 +1,22 @@
+{
+  "name": "ADAutoLayout",
+  "version": "0.1.2",
+  "summary": "A category on UIView to simplify programmatically use of Auto Layout.",
+  "description": "Auto Layout constraints constants as properties. More options will be added soon.",
+  "license": "MIT",
+  "authors": {
+    "axldyb": "aksel.dybdal@shortcut.no"
+  },
+  "source": {
+    "git": "https://github.com/axldyb/ADAutoLayout.git",
+    "tag": "0.1.2"
+  },
+  "social_media_url": "https://twitter.com/axldyb",
+  "homepage": "http://www.akseldybdal.com",
+  "platforms": {
+    "ios": "7.0"
+  },
+  "requires_arc": true,
+  "source_files": "ADAutoLayout",
+  "public_header_files": "ADAutoLayout/*.h"
+}

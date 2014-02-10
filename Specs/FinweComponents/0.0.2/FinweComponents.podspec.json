@@ -1,0 +1,22 @@
+{
+  "name": "FinweComponents",
+  "version": "0.0.2",
+  "summary": "FinweComponents containing all the components for video and image manipulation.",
+  "homepage": "https://github.com/FinweLtd/FinweComponents",
+  "license": {
+    "type": "PRIVATE",
+    "file": "LICENSE.txt"
+  },
+  "authors": {
+    "Hannu Limma": "Hannu.Limma@finwe.fi"
+  },
+  "source": {
+    "git": "https://github.com/FinweLtd/FinweComponents.git",
+    "tag": "0.0.2"
+  },
+  "platforms": {
+    "ios": "6.0"
+  },
+  "source_files": "FinweComponents",
+  "requires_arc": true
+}

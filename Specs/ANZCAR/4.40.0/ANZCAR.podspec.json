@@ -1,0 +1,102 @@
+{
+  "name": "ANZCAR",
+  "version": "4.40.0",
+  "summary": "The ANZCAR module provides the services to communicate to CAR for Investments etc.",
+  "homepage": "http://appau227dev262.appdev.corptst.anz.com:8090/display/IDS/iOS+Development+Space+Home",
+  "authors": {
+    "Rochana Attale Don": "gayani.attaledon@anz.com",
+    "Michael Dove": "michael.dove@outware.com.au",
+    "Shaun Ervine": "shaun.ervine@anz.com",
+    "Bin Feng": "bin@outware.com.au",
+    "Alex Gvozdik": "alex@outware.com.au",
+    "Kent Humphries": "kent@outware.com.au",
+    "Vishal Patel": "vishal.patel2@anz.com",
+    "Robert Wagstaff": "robert.wagstaff@anz.com",
+    "Stephen Yao": "stephen@outware.com",
+    "Adam Sharp": "adam.sharp@outware.com.au",
+    "Jean-Étienne Parrot": "jean-etienne.parrot@outware.com.au"
+  },
+  "license": {
+    "type": "No License",
+    "file": "LICENSE"
+  },
+  "source": {
+    "git": "gitlab.local:grow/ANZCARService.git",
+    "tag": "4.40.0"
+  },
+  "requires_arc": true,
+  "xcconfig": {
+    "GCC_GENERATE_TEST_COVERAGE_FILES": "YES",
+    "GCC_INSTRUMENT_PROGRAM_FLOW_ARCS": "YES"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "default_subspec": "Core",
+  "subspecs": [
+    {
+      "name": "Core",
+      "dependencies": {
+        "ANZUIKit": [
+          "~> 4.40"
+        ],
+        "ANZFoundation": [
+          "~> 4.40"
+        ],
+        "ANZAccount": [
+          "~> 4.40"
+        ],
+        "AFNetworking": [
+          "1.1.0"
+        ],
+        "RKObjectMapping": [
+          "0.20.0"
+        ],
+        "SBJson": [
+          "3.2"
+        ],
+        "AFHTTPRequestOperationLogger": [
+          "0.10.0"
+        ]
+      },
+      "source_files": [
+        "ANZCAR/Classes/Core/**/*.{h,m}",
+        "ANZCAR/Classes/Origination/**/*.{h,m}"
+      ],
+      "prefix_header_contents": "      #ifdef __OBJC__\n          #import <ANZFoundation/ANZLog.h>\n          #import <AFNetworking/AFNetworking.h>\n          #import \"ANZCARBundles.h\"\n      #endif /* __OBJC__ */\n",
+      "resource_bundles": {
+        "ANZCARResources": "ANZCARResources/Localizable.strings"
+      }
+    },
+    {
+      "name": "ANZINService",
+      "dependencies": {
+        "ANZCAR/Core": [
+          "~> 4.40"
+        ]
+      },
+      "source_files": [
+        "ANZCAR/Classes/Investments/**/*.{h,m}",
+        "ANZCAR/Classes/Marketplace/**/*.{h,m}"
+      ]
+    },
+    {
+      "name": "ANZSAService",
+      "dependencies": {
+        "ANZCAR/Core": [
+          "~> 4.40"
+        ]
+      },
+      "source_files": "ANZCAR/Classes/Superannuation/**/*.{h,m}"
+    },
+    {
+      "name": "MarketplaceService",
+      "dependencies": {
+        "ANZCAR/Core": [
+          "~> 4.40"
+        ]
+      },
+      "source_files": "ANZCAR/Classes/Marketplace/**/*.{h,m}"
+    }
+  ]
+}

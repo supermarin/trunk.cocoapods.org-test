@@ -1,0 +1,34 @@
+{
+  "version": "0.0.1",
+  "homepage": "http://nimbusbase.com/tutorial-ios.html",
+  "source": {
+    "http": "http://nimbusbase.com/download/sdk/ios/0.0.1/NimbusBase.zip"
+  },
+  "xcconfig": {
+    "OTHER_LDFLAGS": "-ObjC -force_load \"$(PODS_ROOT)/NimbusBase/NimbusBase/libNimbusBase.a\"",
+    "LIBRARY_SEARCH_PATHS": "\"$(PODS_ROOT)/NimbusBase/NimbusBase\""
+  },
+  "requires_arc": true,
+  "name": "NimbusBase",
+  "summary": "NimbusBase cloud SDK for iOS.",
+  "preserve_paths": "NimbusBase/libNimbusBase.a",
+  "authors": {
+    "NimbusBase, Inc.": "release@nimbusbase.com"
+  },
+  "platforms": {
+    "ios": "6.0"
+  },
+  "source_files": "NimbusBase/Headers/*",
+  "license": {
+    "type": "Commercial",
+    "text": "        Copyright (c) 2013 NimbusBase, Inc. All rights reserved.\n"
+  },
+  "resources": "NimbusBase/Resources/NimbusBaseResources.bundle",
+  "frameworks": [
+    "CoreData",
+    "MobileCoreServices",
+    "QuartzCore",
+    "Security",
+    "SystemConfiguration"
+  ]
+}

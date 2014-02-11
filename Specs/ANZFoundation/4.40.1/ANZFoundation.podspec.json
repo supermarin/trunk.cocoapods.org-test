@@ -1,0 +1,76 @@
+{
+  "name": "ANZFoundation",
+  "version": "4.40.1",
+  "summary": "Contains core foundation utilities such as keychain and encryption.",
+  "homepage": "http://appau227dev262.appdev.corptst.anz.com:8090/display/IDS/iOS+Development+Space+Home",
+  "authors": {
+    "Rochana Attale Don": "gayani.attaledon@anz.com",
+    "Michael Dove": "michael.dove@outware.com.au",
+    "Shaun Ervine": "shaun.ervine@anz.com",
+    "Bin Feng": "bin@outware.com.au",
+    "Alex Gvozdik": "alex@outware.com.au",
+    "Kent Humphries": "kent@outware.com.au",
+    "Vishal Patel": "vishal.patel2@anz.com",
+    "Robert Wagstaff": "robert.wagstaff@anz.com",
+    "Stephen Yao": "stephen@outware.com.au",
+    "Adam Sharp": "adam.sharp@outware.com.au",
+    "Akshay Venkatesh": "akshay.venkatesh@outware.com.au"
+  },
+  "license": {
+    "type": "No License",
+    "file": "LICENSE"
+  },
+  "source": {
+    "git": "git@gitlab.local:grow/ANZWICFoundation.git",
+    "tag": "4.40.1"
+  },
+  "requires_arc": true,
+  "default_subspec": "no-arc",
+  "dependencies": {
+    "OpenSSL": [
+      "1.0.1"
+    ],
+    "UICKeyChainStore": [
+      "1.0.0-6745ef5-26092012"
+    ],
+    "EnumeratorKit": [
+
+    ],
+    "SSLConservatory": [
+      "1.0.0-6531eba-10072013"
+    ],
+    "AFNetworking": [
+      "1.1.0"
+    ]
+  },
+  "xcconfig": {
+    "GCC_GENERATE_TEST_COVERAGE_FILES": "YES",
+    "GCC_INSTRUMENT_PROGRAM_FLOW_ARCS": "YES"
+  },
+  "source_files": "ANZFoundation/**/*.{h,m,c}",
+  "exclude_files": "ANZFoundation/ANZReachability.m",
+  "platforms": {
+    "ios": "7.0"
+  },
+  "ios": {
+    "frameworks": [
+      "SystemConfiguration",
+      "Security",
+      "AssetsLibrary",
+      "CFNetwork"
+    ]
+  },
+  "resource_bundles": {
+    "ANZFoundationResources": [
+      "ANZFoundationResources/trusted-ca-authority.der",
+      "ANZFoundationResources/**/*.{strings,plist,foundation}"
+    ]
+  },
+  "subspecs": [
+    {
+      "name": "no-arc",
+      "source_files": "ANZFoundation/ANZReachability.*",
+      "requires_arc": false
+    }
+  ]
+}

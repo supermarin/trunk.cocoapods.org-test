@@ -1,0 +1,33 @@
+{
+  "name": "MLPickerView",
+  "version": "0.1.5",
+  "summary": "MLPickerView is a variation of an UIPickerView.",
+  "homepage": "http://michallichwa.com",
+  "screenshots": "https://github.com/mlichwa/MLPickerView/blob/master/Assets/img.png?raw=true2",
+  "license": "MIT",
+  "authors": {
+    "Michal Lichwa": "michal@michallichwa.com"
+  },
+  "source": {
+    "git": "https://github.com/mlichwa/MLPickerView.git",
+    "tag": "0.1.5"
+  },
+  "social_media_url": "https://twitter.com/mlichwa",
+  "platforms": {
+    "ios": "7.0"
+  },
+  "requires_arc": true,
+  "source_files": "*.{h,m}",
+  "ios": {
+    "exclude_files": "Classes/osx"
+  },
+  "osx": {
+    "exclude_files": "Classes/ios"
+  },
+  "frameworks": [
+    "Foundation",
+    "CoreGraphics",
+    "UIKit",
+    "XCTest"
+  ]
+}

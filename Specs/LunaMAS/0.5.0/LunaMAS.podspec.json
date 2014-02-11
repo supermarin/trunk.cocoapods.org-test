@@ -1,0 +1,31 @@
+{
+  "name": "LunaMAS",
+  "version": "0.5.0",
+  "summary": "Access LunaMAS API",
+  "description": "                       Initialize a LunaMAS App via sharedInstance and the setters in your AppDelegate.\n                       LunaMAS Connection will use this instance for all the requests happening\n",
+  "homepage": "https://bitbucket.org/opwoco/de.opwoco.pod.lunamas",
+  "license": "MIT",
+  "authors": {
+    "Christopher Beloch": "c.beloch@opwoco.de"
+  },
+  "source": {
+    "git": "git@bitbucket.org:opwoco/de.opwoco.pod.lunamas.git",
+    "tag": "0.5.0"
+  },
+  "platforms": {
+    "ios": "6.0"
+  },
+  "requires_arc": true,
+  "source_files": "Classes/**/*.{h,m}",
+  "dependencies": {
+    "AFNetworking": [
+      "~> 2.0"
+    ],
+    "CocoaSecurity": [
+      "~> 1.2.3"
+    ],
+    "UIDevice-Hardware": [
+      "~> 0.1"
+    ]
+  }
+}

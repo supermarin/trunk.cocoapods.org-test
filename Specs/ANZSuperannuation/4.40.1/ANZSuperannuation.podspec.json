@@ -1,0 +1,107 @@
+{
+  "name": "ANZSuperannuation",
+  "version": "4.40.1",
+  "summary": "The ANZSuperannuation module responsible for all super interaction via Banking / SAL",
+  "homepage": "http://appau227dev262.appdev.corptst.anz.com:8090/display/IDS/iOS+Development+Space+Home",
+  "authors": {
+    "Rochana Attale Don": "gayani.attaledon@anz.com",
+    "Michael Dove": "michael.dove@outware.com.au",
+    "Shaun Ervine": "shaun.ervine@anz.com",
+    "Bin Feng": "bin@outware.com.au",
+    "Alex Gvozdik": "alex@outware.com.au",
+    "Kent Humphries": "kent@outware.com.au",
+    "Vishal Patel": "vishal.patel2@anz.com",
+    "Robert Wagstaff": "robert.wagstaff@anz.com",
+    "Stephen Yao": "stephen@outware.com",
+    "Adam Sharp": "adam.sharp@outware.com.au"
+  },
+  "license": {
+    "type": "No License",
+    "file": "LICENSE"
+  },
+  "source": {
+    "git": "gitlab.local:grow/ANZSuperannuation.git",
+    "tag": "4.40.1"
+  },
+  "requires_arc": true,
+  "platforms": {
+    "ios": "7.0"
+  },
+  "dependencies": {
+    "EnumeratorKit": [
+      "~> 0.1.1-alpha"
+    ],
+    "ANZFoundation": [
+      "~> 4.40"
+    ],
+    "ANZUIKit": [
+      "~> 4.40"
+    ],
+    "ANZAccount": [
+      "~> 4.40"
+    ],
+    "ANZCAR/ANZSAService": [
+      "~> 4.40"
+    ],
+    "Cordova/Base": [
+      "~> 3.1.0"
+    ],
+    "SBJson": [
+      "3.2"
+    ]
+  },
+  "default_subspec": "Core",
+  "subspecs": [
+    {
+      "name": "Core",
+      "dependencies": {
+        "ANZBasicBanking": [
+          "~> 4.40"
+        ],
+        "ANZAccountsService": [
+          "~> 4.40"
+        ],
+        "ANZTransaction": [
+          "~> 4.40"
+        ]
+      },
+      "xcconfig": {
+        "GCC_GENERATE_TEST_COVERAGE_FILES": "YES",
+        "GCC_INSTRUMENT_PROGRAM_FLOW_ARCS": "YES"
+      },
+      "source_files": "ANZSuperannuation/Classes/**/*.{h,m}",
+      "prefix_header_contents": "#ifdef __OBJC__\n    #import \"ANZSALocalizableStrings.h\"\n    #import <Foundation/Foundation.h>\n    #import <UIKit/UIKit.h>\n    #import <ANZFoundation/ANZDevice.h>\n    #import <ANZFoundation/ANZLog.h>\n    #import \"ANZSAAccessibilityIdentifiers.h\"\n\n#endif /* __OBJC__ */\n",
+      "resource_bundles": {
+        "ANZSuperannuationResources": "ANZSuperannuationResources/**/*.{png,strings}"
+      }
+    },
+    {
+      "name": "CDVWebViewController",
+      "source_files": [
+        "ANZSuperannuation/Classes/Controllers/ANZSACDV*.[hm]",
+        "ANZSuperannuation/Classes/Utilities/Constants/ANZSA{AccessibilityIdentifiers,Constants,LocalizableStrings}.h",
+        "ANZSuperannuation/Classes/Utilities/ANZSABundles.[hm]",
+        "ANZSuperannuation/Classes/Utilities/ANZSASessionData.[hm]"
+      ]
+    },
+    {
+      "name": "CDVTabsDemo",
+      "dependencies": {
+        "ANZSuperannuation/CDVWebViewController": [
+
+        ]
+      },
+      "source_files": [
+        "ANZSuperannuation/Classes/Controllers/ANZTabBarView.[hm]",
+        "ANZSuperannuation/Classes/Controllers/ANZTabbedViewController.[hm]",
+        "ANZSuperannuation/Classes/Controllers/ANZTabbedContainerViewController.[hm]",
+        "ANZSuperannuation/Classes/Controllers/ANZSAInfoViewController.[hm]",
+        "ANZSuperannuation/Classes/Controllers/ANZSATabbedWebViewController/**/*.[hm]",
+        "ANZSuperannuation/Classes/Controllers/ANZSAInvestments"
+      ],
+      "resource_bundles": {
+        "ANZSuperannuationResources": "ANZSuperannuationResources/**/*.{png,strings}"
+      }
+    }
+  ]
+}

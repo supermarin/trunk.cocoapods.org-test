@@ -1,0 +1,32 @@
+{
+  "name": "iOSShared",
+  "version": "0.1.5",
+  "summary": "Shared Volusion/Mozu iOS components",
+  "homepage": "http://mozu.com",
+  "license": "MIT",
+  "authors": {
+    "Graham Perks": "graham_perks@volusion.com"
+  },
+  "source": {
+    "git": "https://github.com/VolusionDev/iOSShared.git",
+    "tag": "0.1.5"
+  },
+  "platforms": {
+    "ios": "6.1"
+  },
+  "requires_arc": true,
+  "source_files": "Classes/ios/*.{m,h}",
+  "resources": "Assets",
+  "ios": {
+    "exclude_files": "Classes/osx"
+  },
+  "osx": {
+    "exclude_files": "Classes/ios"
+  },
+  "public_header_files": "Classes/**/*.h",
+  "dependencies": {
+    "AFNetworking": [
+      "~> 1.3"
+    ]
+  }
+}

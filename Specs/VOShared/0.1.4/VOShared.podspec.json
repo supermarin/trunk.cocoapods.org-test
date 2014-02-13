@@ -1,0 +1,32 @@
+{
+  "name": "VOShared",
+  "version": "0.1.4",
+  "summary": "Shared Volusion/Mozu components",
+  "homepage": "http://mozu.com",
+  "license": "MIT",
+  "authors": {
+    "Graham Perks": "graham_perks@volusion.com"
+  },
+  "source": {
+    "git": "https://github.com/VolusionDev/VOShared.git",
+    "tag": "0.1.4"
+  },
+  "platforms": {
+    "ios": "6.1"
+  },
+  "requires_arc": true,
+  "source_files": "Classes/ios/*.{m,h}",
+  "resources": "Assets",
+  "ios": {
+    "exclude_files": "Classes/osx"
+  },
+  "osx": {
+    "exclude_files": "Classes/ios"
+  },
+  "public_header_files": "Classes/**/*.h",
+  "dependencies": {
+    "AFNetworking": [
+      "~> 1.3"
+    ]
+  }
+}

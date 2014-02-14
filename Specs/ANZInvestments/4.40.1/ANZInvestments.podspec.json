@@ -1,0 +1,190 @@
+{
+  "name": "ANZInvestments",
+  "platforms": {
+    "ios": "7.0"
+  },
+  "version": "4.40.1",
+  "summary": "The ANZInvestments module responsible for all the investing needs via CAR",
+  "homepage": "http://appau227dev262.appdev.corptst.anz.com:8090/display/IDS/iOS+Development+Space+Home",
+  "authors": {
+    "Rochana Attale Don": "gayani.attaledon@anz.com",
+    "Michael Dove": "michael.dove@outware.com.au",
+    "Shaun Ervine": "shaun.ervine@anz.com",
+    "Bin Feng": "bin@outware.com.au",
+    "Alex Gvozdik": "alex@outware.com.au",
+    "Kent Humphries": "kent@outware.com.au",
+    "Vishal Patel": "vishal.patel2@anz.com",
+    "Robert Wagstaff": "robert.wagstaff@anz.com",
+    "Stephen Yao": "stephen@outware.com.au",
+    "Mica Huynh": "mica@outware.com.au",
+    "Adam Sharp": "adam.sharp@outware.com.au",
+    "Jean-Étienne Parrot": "jean-etienne.parrot@outware.com.au",
+    "Akshay Venkatesh": "akshay.venkatesh@outware.com.au"
+  },
+  "license": {
+    "type": "No License",
+    "file": "LICENSE"
+  },
+  "source": {
+    "git": "gitlab.local:grow/ANZInvestments.git",
+    "tag": "4.40.1"
+  },
+  "requires_arc": true,
+  "xcconfig": {
+    "GCC_GENERATE_TEST_COVERAGE_FILES": "YES",
+    "GCC_INSTRUMENT_PROGRAM_FLOW_ARCS": "YES"
+  },
+  "default_subspec": "ANZINUI",
+  "resource_bundles": {
+    "ANZInvestments": [
+      "ANZInvestments/Supporting Files/companies.plist",
+      "ANZInvestmentsResources/**/*.{plist,strings,png,html,css}"
+    ]
+  },
+  "subspecs": [
+    {
+      "name": "Common",
+      "dependencies": {
+        "ANZFoundation": [
+          "~> 4.40"
+        ],
+        "ANZUIKit": [
+          "~> 4.40"
+        ],
+        "ANZConfiguration": [
+          "~> 4.40"
+        ],
+        "ANZRegistration": [
+          "~> 4.40"
+        ],
+        "ANZSAL": [
+          "~> 4.40"
+        ]
+      },
+      "source_files": [
+        "ANZInvestments/Classes/Utilities/{ANZCurrencyFormatter+ANZINDecimalPlaces,ANZINBundles,ANZINSessionData,ANZINNumberFormatter,ANZDateFormatter,ANZINKeyPathValueTransformer}.{h,m}",
+        "ANZInvestments/Classes/Utilities/Module Interface/{ANZINFeedbackProtocol}.{h,m}",
+        "ANZInvestments/Classes/Utilities/Constants/{ANZINLocalizableStrings}.{h,m}",
+        "ANZInvestments/Classes/Services/Mailbox/*.{h,m}"
+      ]
+    },
+    {
+      "name": "ANZINService",
+      "frameworks": [
+        "AddressBook",
+        "AddressBookUI",
+        "MessageUI"
+      ],
+      "dependencies": {
+        "ANZFoundation": [
+          "~> 4.40"
+        ],
+        "ANZInvestments/Common": [
+          "~> 4.40"
+        ],
+        "ANZCAR/ANZINService": [
+          "~> 4.40"
+        ],
+        "AFNetworking": [
+          "1.1.0"
+        ],
+        "RKObjectMapping": [
+          "0.20.0"
+        ],
+        "AFHTTPRequestOperationLogger": [
+          "0.10.0"
+        ]
+      },
+      "source_files": [
+        "ANZInvestments/Classes/{Services,Models}/**/*.{h,m}",
+        "ANZInvestments/Classes/Utilities/ANZINStockCodeToCompanyNameMap.h",
+        "ANZInvestments/Classes/Controllers/ANZINUI/ANZINInvestments/ANZINStockCodeMapper.{h,m}",
+        "ANZInvestments/Classes/Controllers/ANZINUI/ANZINInvestments/ANZINNotifications.{h,m}"
+      ],
+      "exclude_files": [
+        "ANZInvestments/Classes/Models/{ANZINBalance+TransactionTableCellProtocol,ANZINHolding+ANZCardImage}.{h,m}",
+        "ANZInvestments/Classes/Models/{ANZINOrderDescription+companyName,ANZINOrder+ANZCardImage,ANZINOrderDescription+ANZCardImage}.{h,m}",
+        "ANZInvestments/Classes/Models/{ANZINTransaction+TransactionTableCellProtocol,ANZINItem+ANZCardImage,ANZINOrder+companyName}.{h,m}"
+      ],
+      "prefix_header_contents": "      #ifdef __OBJC__\n        #import <MobileCoreServices/MobileCoreServices.h>\n        #import <SystemConfiguration/SystemConfiguration.h>\n        #import <AFNetworking/AFNetworking.h>\n        #import \"ANZINBundles.h\"\n        #import \"ANZINLocalizableStrings.h\"\n        #import <ANZFoundation/ANZLog.h>\n        #import <ANZUIKit/UIImage+ANZImageFromBundle.h>\n      #endif /* __OBJC__ */\n"
+    },
+    {
+      "name": "ANZINHoldingSummary",
+      "dependencies": {
+        "ANZUIKit": [
+          "~> 4.40"
+        ],
+        "ANZFoundation": [
+          "~> 4.40"
+        ],
+        "ANZInvestments/Common": [
+          "~> 4.40"
+        ],
+        "ANZCAR/ANZINService": [
+          "~> 4.40"
+        ],
+        "ANZMarketplace/StockProfileUIKit": [
+          "~> 4.40"
+        ]
+      },
+      "source_files": [
+        "ANZInvestments/Classes/Controllers/ANZINStockProfile/Summary/*.{h,m}",
+        "ANZInvestments/Classes/Controllers/ANZINUI/ANZINInvestments/ANZINStockCodeMapper.{h,m}",
+        "ANZInvestments/Classes/Common/ANZINUIConstants.h",
+        "ANZInvestments/Classes/UIComponents/UILabel+ANZINshrinkable.{h,m}",
+        "ANZInvestments/Classes/Utilities/ANZINStockCodeToCompanyNameMap.h",
+        "ANZInvestments/Classes/Utilities/Error/ANZINErrorHandler.{h,m}",
+        "ANZInvestments/Classes/Models/{ANZINStockDescription,ANZINStockDescription+DisplayFormatting,ANZINTransaction+DisplayFormatting}.{h,m}",
+        "ANZInvestments/Classes/Models/{ANZINTradingSymbol,ANZINBalance+TransactionTableCellProtocol,ANZINOrder+ANZCardImage,ANZINHolding+companyName}.{h,m}",
+        "ANZInvestments/Classes/Models/{ANZINItem+companyName,ANZINOrder+companyName,ANZINHolding+ANZCardImage,ANZINTransaction+TransactionTableCellProtocol}.{h,m}",
+        "ANZInvestments/Classes/Models/{ANZINItem+ANZCardImage,ANZINOrderDescription+ANZCardImage,ANZINOrderDescription+companyName}.{h,m}"
+      ]
+    },
+    {
+      "name": "OrderKitUI",
+      "dependencies": {
+        "ANZInvestments/ANZINUI": [
+          "~> 4.40"
+        ],
+        "ANZFoundation": [
+          "~> 4.40"
+        ]
+      },
+      "source_files": "ANZInvestments/Classes/Controllers/ANZINNewOrder/**/*.{h,m}"
+    },
+    {
+      "name": "ANZINUI",
+      "frameworks": [
+        "AddressBookUI",
+        "MessageUI",
+        "QuickLook"
+      ],
+      "dependencies": {
+        "ANZInvestments/ANZINService": [
+          "~> 4.40"
+        ],
+        "ANZAccountsService": [
+          "~> 4.40"
+        ],
+        "ANZInvestments/OrderKitUI": [
+          "~> 4.40"
+        ],
+        "ANZMarketplace/StockProfileUIKit": [
+          "~> 4.40"
+        ]
+      },
+      "source_files": [
+        "ANZInvestments/Classes/{Views,Utilities,UIComponents,Common,Categories}/**/*.{h,m}",
+        "ANZInvestments/Classes/Headers/ANZINUI/**/*.h",
+        "ANZInvestments/Classes/Controllers/ANZINUI/**/*.{h,m}"
+      ],
+      "exclude_files": [
+        "ANZInvestments/Classes/Utilities/{ANZCurrencyFormatter+ANZINDecimalPlaces,ANZINBundles,ANZINSessionData,ANZINNumberFormatter,ANZDateFormatter,ANZINKeyPathValueTransformer}.{h,m}",
+        "ANZInvestments/Classes/Utilities/Module Interface/{ANZINFeedbackProtocol}.{h,m}",
+        "ANZInvestments/Classes/Utilities/Constants/{ANZINLocalizableStrings}.{h,m}",
+        "ANZInvestments/Classes/Services/Mailbox/*.{h,m}"
+      ],
+      "prefix_header_contents": "      #ifdef __OBJC__\n        #import <MobileCoreServices/MobileCoreServices.h>\n        #import <SystemConfiguration/SystemConfiguration.h>\n        #import <AFNetworking/AFNetworking.h>\n        #import \"ANZINBundles.h\"\n        #import \"ANZINLocalizableStrings.h\"\n        #import <ANZFoundation/ANZDevice.h>\n        #import <ANZFoundation/ANZLog.h>\n        #import <ANZUIKit/UIImage+ANZImageFromBundle.h>\n        #import <ANZUIKit/ANZColorMacro.h>\n        #import <ANZFoundation/ANZLog.h>\n        #import \"ANZINUIConstants.h\"\n        #import \"ANZINAccessibilityIdentifiers.h\"\n        #import <ANZUIKit/ANZUIScreenMacro.h>\n        #import <ANZUIKit/ANZUIResponseHandler.h>\n        #import <ANZUIKit/ANZResponseForUI.h>\n      #endif /* __OBJC__ */\n"
+    }
+  ]
+}

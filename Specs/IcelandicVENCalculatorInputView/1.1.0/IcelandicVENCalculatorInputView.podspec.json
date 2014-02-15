@@ -1,0 +1,27 @@
+{
+  "homepage": "https://github.com/grundvollur/IcelandicVENCalculatorInputView",
+  "description": "                   A pretty calculator keyboard for iOS. Use it as a standalone keyboard or use our VENCalculatorInputTextField.\n",
+  "summary": "Venmo-style calculator keyboard for iOS, customized for Icelandic",
+  "authors": {
+    "Ayaka Nonaka": "ayaka@venmo.com",
+    "Maggi Trymbill": "maggi@trymbill.is"
+  },
+  "source_files": "VENCalculatorInputView/**/*.{h,m}",
+  "source": {
+    "tag": "v1.1.0",
+    "git": "https://github.com/grundvollur/IcelandicVENCalculatorInputView.git"
+  },
+  "version": "1.1.0",
+  "platforms": {
+    "ios": "5.0"
+  },
+  "resources": [
+    "VENCalculatorInputView/**/*.{xib,png}"
+  ],
+  "requires_arc": true,
+  "name": "IcelandicVENCalculatorInputView",
+  "license": {
+    "file": "LICENSE",
+    "type": "MIT"
+  }
+}

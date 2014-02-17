@@ -1,0 +1,35 @@
+{
+  "name": "ReachabilityManager-AFNetworking",
+  "version": "0.0.2",
+  "license": "Apache",
+  "summary": "A ReachabilityManager for AFNetworking 1.X.",
+  "homepage": "https://github.com/rodchile/ReachabilityManager-AFNetworking",
+  "authors": {
+    "Mattt Thompson": "m@mattt.me",
+    "Rodrigo Garcia Segovia (Fork Owner)": "rod@rodrigogarcia.net"
+  },
+  "source": {
+    "git": "https://github.com/rodchile/ReachabilityManager-AFNetworking.git",
+    "tag": "v0.0.2"
+  },
+  "source_files": "AFNetworking",
+  "requires_arc": true,
+  "platforms": {
+    "ios": "5.0",
+    "osx": "10.7"
+  },
+  "ios": {
+    "frameworks": [
+      "MobileCoreServices",
+      "SystemConfiguration",
+      "Security"
+    ]
+  },
+  "osx": {
+    "frameworks": [
+      "CoreServices",
+      "SystemConfiguration",
+      "Security"
+    ]
+  }
+}

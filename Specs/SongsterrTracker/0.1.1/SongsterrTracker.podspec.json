@@ -1,0 +1,58 @@
+{
+  "name": "SongsterrTracker",
+  "version": "0.1.1",
+  "summary": "A pod to easily integrate with all the statistics tools used at Songsterr.",
+  "homepage": "https://github.com/songsterr/SongsterrTracker",
+  "license": "PROPRIETARY",
+  "authors": {
+    "Andrey Subbotin": "andrey@subbotin.me"
+  },
+  "source": {
+    "git": "https://github.com/songsterr/SongsterrTracker.git",
+    "tag": "v0.1.1"
+  },
+  "platforms": {
+    "ios": "6.0"
+  },
+  "requires_arc": true,
+  "source_files": [
+    "Classes",
+    "PublicHeaders/*.h"
+  ],
+  "public_header_files": "PublicHeaders/*.h",
+  "dependencies": {
+    "GoogleAnalytics-iOS-SDK": [
+      "~> 3.0"
+    ],
+    "Mixpanel": [
+      "~> 2.2"
+    ],
+    "SongsterrTracker/CrashlyticsFramework": [
+
+    ],
+    "Facebook-iOS-SDK": [
+      "~> 3.11"
+    ]
+  },
+  "subspecs": [
+    {
+      "name": "CrashlyticsFramework",
+      "version": "2.1.5",
+      "summary": "Best Crash reporting tool ever",
+      "homepage": "https://github.com/songsterr/CrashlyticsFramework.git",
+      "license": "PROPRIETARY",
+      "platforms": {
+        "ios": "6.0"
+      },
+      "requires_arc": true,
+      "source_files": "Crashlytics.framework/Versions/A/Headers/*.h",
+      "ios": {
+        "vendored_frameworks": "Crashlytics.framework"
+      },
+      "xcconfig": {
+        "FRAMEWORK_SEARCH_PATHS": "$(inherited)"
+      },
+      "preserve_paths": "Crashlytics.framework"
+    }
+  ]
+}

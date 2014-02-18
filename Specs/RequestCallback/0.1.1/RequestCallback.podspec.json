@@ -1,0 +1,17 @@
+{
+  "name": "RequestCallback",
+  "version": "0.1.1",
+  "summary": "Wrapper for a typical request callback.",
+  "homepage": "http://github.com/fellipecaetano/RequestCallback",
+  "license": "MIT",
+  "authors": {
+    "Fellipe Caetano": "fellipe.caetano4@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/fellipecaetano/RequestCallback.git",
+    "tag": "0.1.1"
+  },
+  "requires_arc": true,
+  "source_files": "Classes",
+  "public_header_files": "Classes/*.h"
+}

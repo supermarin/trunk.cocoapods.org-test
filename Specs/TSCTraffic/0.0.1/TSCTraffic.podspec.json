@@ -1,0 +1,20 @@
+{
+  "name": "TSCTraffic",
+  "version": "0.0.1",
+  "summary": "A static library to talk with Traffic backend.",
+  "description": "                   A static library to talk with Traffic backend.\n",
+  "homepage": "https://confluence.r3d.com/display/traffic/Sur+la+Route",
+  "license": "Proprietary",
+  "authors": {
+    "Romain Pouclet": "romain.pouclet@techsolcom.ca"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "source": {
+    "git": "ssh://git@stash.r3d.com:7999/traf/tsctraffic.git",
+    "tag": "0.0.1"
+  },
+  "source_files": "TSCTraffic/**/*.{h,m}",
+  "requires_arc": true
+}

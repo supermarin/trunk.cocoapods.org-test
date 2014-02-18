@@ -1,0 +1,26 @@
+{
+  "name": "RSSJournalTracker",
+  "version": "1.0.0",
+  "summary": "An Objective-C library for tracking GPS and CoreMotion data and creating Visit Suggestions.",
+  "homepage": "http://www.ridgidsoftwaresolutions.com",
+  "license": "MIT",
+  "authors": {
+    "Sebastian Vancea": "sebastian.vancea@emerson.com"
+  },
+  "source": {
+    "git": "https://github.com/RIDGIDSoftwareSolutions/RSSJournalTracker-iOS.git",
+    "tag": "1.0.0"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "requires_arc": true,
+  "source_files": "JournalTracker/PodClasses/**/*.{h,m}",
+  "resources": "JournalTracker/PodResources/JournalTracker.xcdatamodeld",
+  "frameworks": [
+    "UIKit",
+    "CoreLocation",
+    "CoreData",
+    "Foundation"
+  ]
+}

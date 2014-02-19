@@ -1,0 +1,29 @@
+{
+  "homepage": "http://gitlab.alibaba-inc.com/wireless/tbmainclientframework",
+  "source": {
+    "http": "http://mtl.alibaba-inc.com/oss/mupp/cocoapods/TBSearch/1.0.0/0/TBSearch.framework.zip"
+  },
+  "exclude_files": "TBSearch.framework/Versions/A/Resources/Info.plist",
+  "frameworks": "TBSearch",
+  "summary": "TBSearch Framework.",
+  "description": "                   TBTrade Framework description\n",
+  "license": {
+    "type": "Copyright",
+    "text": "           Alibaba-INC copyright\n"
+  },
+  "resources": "TBSearch.framework/Versions/A/Resources/**/*.*",
+  "name": "TBSearch",
+  "version": "1.0.0",
+  "platforms": {
+    "ios": "4.3"
+  },
+  "authors": {
+    "晨燕": "chenyan.mnn@taobao.com"
+  },
+  "source_files": "TBSearch.framework/Versions/A/Headers/*.h",
+  "preserve_paths": "TBSearch.framework/*",
+  "xcconfig": {
+    "FRAMEWORK_SEARCH_PATHS": "\"$(PODS_ROOT)/TBSearch\""
+  },
+  "vendored_frameworks": "TBSearch.framework"
+}

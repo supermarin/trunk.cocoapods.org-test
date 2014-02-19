@@ -1,0 +1,128 @@
+{
+  "name": "ANZMarketplace",
+  "version": "3.40.5",
+  "summary": "The stock marketplace component for the Grow application.",
+  "license": {
+    "type": "No License",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Jason Maddocks": "jasonrm@au1.ibm.com",
+    "Pruthvi Onkar": "pruthvi@au1.ibm.com"
+  },
+  "homepage": "http://www.anz.com",
+  "source": {
+    "git": "gitlab.local:grow/ANZMarketplace.git",
+    "branch": "development",
+    "tag": "3.40.5"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "requires_arc": true,
+  "prefix_header_contents": "    #import \"MarketplaceEnvironment.h\"\n",
+  "public_header_files": "**/*.h",
+  "frameworks": [
+    "QuartzCore",
+    "MediaPlayer",
+    "ImageIO",
+    "QuickLook"
+  ],
+  "subspecs": [
+    {
+      "name": "Core",
+      "source_files": [
+        "Environment",
+        "ANZMarketplace",
+        "ANZMarketplace/**/*.{h,m}",
+        "StockProfileUIKit/**/{UIViewController+StockProfile,UICollectionViewRowDelegate,StockProfileResearchSubHeading,CalendarView,ANZMPStockProfileAccessibilityIdentifiers,StockProfileContainerViewController,StockProfileViewController}.{h,m}"
+      ],
+      "exclude_files": [
+        "ANZMarketplaceTests",
+        "ANZMarketplaceTests/**",
+        "ANZMarketplace/AppDelegate.{h,m}",
+        "ANZMarketplace/ANZMarketplace-Info.plist",
+        "ANZMarketplace/main.m"
+      ],
+      "resources": [
+        "ANZMarketplace/**/*.{png,html,plist,ttf,xib}",
+        "ANZMarketplace/**/*.storyboard",
+        "ANZMarketplaceResources/Build/ANZMarketplaceResources.bundle"
+      ],
+      "dependencies": {
+        "SBJson": [
+
+        ],
+        "SDWebImage": [
+
+        ],
+        "MBProgressHUD": [
+
+        ],
+        "ANZUIKit": [
+          "~> 3.37"
+        ],
+        "Cordova/Base": [
+          "~> 3.1.0"
+        ],
+        "ANZCAR/ANZINService": [
+          "~> 3.37"
+        ],
+        "ANZCAR/MarketplaceService": [
+          "~> 3.37"
+        ],
+        "ANZAccountsService": [
+          "~> 3.37"
+        ],
+        "ANZInvestments/ANZINUI": [
+          "~> 3.37"
+        ]
+      },
+      "xcconfig": {
+        "GCC_GENERATE_TEST_COVERAGE_FILES": "YES",
+        "GCC_INSTRUMENT_PROGRAM_FLOW_ARCS": "YES"
+      },
+      "resource_bundles": {
+        "ANZMarketplaceResources": [
+          "ANZMarketplace/**/*.{png,html,plist,ttf}",
+          "ANZMarketplaceResources/**/*.{plist,strings,png,html,css}"
+        ]
+      }
+    },
+    {
+      "name": "StockProfileUIKit",
+      "dependencies": {
+        "ANZMarketplace/Core": [
+
+        ],
+        "ANZInvestments": [
+          "~> 3.37"
+        ],
+        "ANZInvestments/ANZINHoldingSummary": [
+          "~> 3.37"
+        ],
+        "ANZInvestments/OrderKitUI": [
+          "~> 3.37"
+        ],
+        "CorePlot": [
+
+        ],
+        "Cordova/Base": [
+          "~> 3.1.0"
+        ],
+        "ANZCAR/MarketplaceService": [
+          "~> 3.37"
+        ]
+      },
+      "source_files": [
+        "Environment",
+        "StockProfileUIKit/**/*.{h,m}",
+        "ANZMarketplace/Services"
+      ],
+      "resources": [
+        "StockProfileUIKit/**/*.xib",
+        "StockProfileUIKit/**/*.plist"
+      ]
+    }
+  ]
+}

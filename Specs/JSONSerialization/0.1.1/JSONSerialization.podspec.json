@@ -1,0 +1,16 @@
+{
+  "name": "JSONSerialization",
+  "version": "0.1.1",
+  "summary": "A wrapper around NSJSONSerialization that provides a simpler API.",
+  "homepage": "https://github.com/fellipecaetano/JSONSerialization",
+  "license": "MIT",
+  "authors": {
+    "Fellipe Caetano": "fellipe.caetano4@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/fellipecaetano/JSONSerialization.git",
+    "tag": "0.1.1"
+  },
+  "requires_arc": true,
+  "source_files": "JSONSerialization/**/*.{h,m}"
+}

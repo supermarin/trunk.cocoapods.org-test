@@ -1,0 +1,25 @@
+{
+  "name": "IALURLSchemeHandler",
+  "version": "0.0.3",
+  "summary": "URLスキーム連携の共通部分",
+  "description": "                   A longer description of IALURLSchemeHandler in Markdown format.\n\n                   * Think: Why did you write this? What is the focus? What does it do?\n                   * CocoaPods will be using this to generate tags, and improve search results.\n                   * Try to keep it short, snappy and to the point.\n                   * Finally, don't worry about the indent, CocoaPods strips it!\n",
+  "homepage": "http://jp1351100",
+  "license": "Closed",
+  "authors": {
+    "BAN Jun": "Ban.Jun@exc.epson.co.jp"
+  },
+  "platforms": {
+    "ios": "5.0"
+  },
+  "source": {
+    "git": "jenkins:/Users/jenkins/repos/Pods/IALURLSchemeHandler.git",
+    "tag": "0.0.3"
+  },
+  "source_files": "IALURLSchemeHandler/**/*.{h,m}",
+  "requires_arc": false,
+  "dependencies": {
+    "IALUtility": [
+      "~> 0.0.1"
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "YuzaFramework",
+  "version": "0.1.1",
+  "summary": "YuzaFramework contains Yuzas utility and base classes.",
+  "homepage": "http://www.yuza.com",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Ken Franklin": "ken@yuza.com"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "source": {
+    "git": "https://github.com/yuza-hq/YuzaFramework.git",
+    "tag": "0.1.1"
+  },
+  "source_files": "Classes/ios/*.{h,m}",
+  "requires_arc": true
+}

@@ -1,0 +1,24 @@
+{
+  "name": "IPAddress",
+  "version": "0.1.0",
+  "summary": "Fetch ios device ip address.",
+  "description": "                       * My first cocoa pod. I will do more.\n",
+  "homepage": "https://github.com/fionayang/IPAddress",
+  "screenshots": [
+    "www.example.com/screenshots_1",
+    "www.example.com/screenshots_2"
+  ],
+  "license": "MIT",
+  "authors": {
+    "fiona": "fiona@mophie.com"
+  },
+  "source": {
+    "git": "https://github.com/fionayang/IPAddress.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "5.0"
+  },
+  "requires_arc": true,
+  "source_files": "IPAddress/*.{h,m}"
+}

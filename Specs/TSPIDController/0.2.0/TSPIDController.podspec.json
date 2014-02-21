@@ -1,0 +1,17 @@
+{
+  "name": "TSPIDController",
+  "version": "0.2.0",
+  "license": "Copyright, 2014, Touchwonders",
+  "summary": "A Objective-C implementation of a PID-Controller, built for visceral animations.",
+  "homepage": "http://www.touchwonders.com",
+  "authors": "Thomas Visser",
+  "source": {
+    "git": "ssh://git@test.touchwonders.com:2233/~/TSPIDController.git/",
+    "tag": "0.2.0"
+  },
+  "requires_arc": true,
+  "platforms": {
+    "ios": "7.0"
+  },
+  "source_files": "TSPIDController/*.{h,m}"
+}

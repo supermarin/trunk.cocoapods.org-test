@@ -1,0 +1,50 @@
+{
+  "name": "MCIE2",
+  "version": "0.0.1",
+  "license": "Copyright 2013 by MorrisCooke. All rights reserved.",
+  "summary": "MCIE is framework that provides architecture for MorrisCooke iOS and OS X apps.",
+  "homepage": "http://morriscooke.com",
+  "authors": {
+    "Maciek Kupczak": "maciek.kupczak@gmail.com"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "source": {
+    "git": "ssh://git.morriscooke.com/home/git/MCIE2",
+    "tag": "v0.0.1",
+    "branch": "CocoaPods"
+  },
+  "requires_arc": true,
+  "prefix_header_file": "MCIE2/MCIE2-Prefix.pch",
+  "source_files": "MCIE2/**/*.{h,c,m}",
+  "ios": {
+    "resource_bundles": {
+      "MCIE2Resources_iOS": "MCIE2Resources_iOS/**/*.[^pch]*"
+    },
+    "frameworks": [
+      "UIKit",
+      "MultipeerConnectivity"
+    ]
+  },
+  "frameworks": [
+    "AVFoundation",
+    "ImageIO",
+    "Foundation",
+    "CoreGraphics"
+  ],
+  "dependencies": {
+    "MCFoundation": [
+      "~> 0.0.2"
+    ],
+    "MCGraphics": [
+      "~> 0.0.1"
+    ],
+    "MCTrackStorage": [
+      "~> 0.0.2"
+    ],
+    "EZAudio": [
+      "~> 0.0.3"
+    ]
+  }
+}

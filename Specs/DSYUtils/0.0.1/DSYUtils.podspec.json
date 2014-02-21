@@ -1,0 +1,19 @@
+{
+  "platforms": {
+    "ios": "5.0"
+  },
+  "version": "0.0.1",
+  "homepage": "https://github.com/amcastror/DSYUtils",
+  "summary": "A library for common solutions",
+  "authors": {
+    "Matias Castro": "mattias.castro@gmail.com"
+  },
+  "name": "DSYUtils",
+  "source": {
+    "tag": "0.0.1",
+    "git": "https://github.com/amcastror/DSYUtils.git"
+  },
+  "license": "MIT",
+  "requires_arc": true,
+  "source_files": "DSYUtils/DSYUtils/*.{h,m}"
+}

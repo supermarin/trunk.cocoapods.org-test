@@ -1,0 +1,33 @@
+{
+  "name": "mParticle",
+  "version": "2.0.1",
+  "summary": "mParticle SDK in a Cocoapod",
+  "homepage": "http://www.mparticle.com",
+  "license": "MIT",
+  "authors": {
+    "mParticle": "support@mparticle.com"
+  },
+  "source": {
+    "git": "git@bitbucket.org:mparticle/mparticlepod.git",
+    "tag": "2.0.1"
+  },
+  "platforms": {
+    "ios": "5.0"
+  },
+  "ios": {
+    "vendored_frameworks": [
+      "Frameworks/mParticle.framework",
+      "Frameworks/CrashReporter.framework"
+    ]
+  },
+  "frameworks": [
+    "UIKit",
+    "CoreGraphics",
+    "Foundation",
+    "CoreTelephony",
+    "SystemConfiguration",
+    "CoreLocation",
+    "Social",
+    "Accounts"
+  ]
+}

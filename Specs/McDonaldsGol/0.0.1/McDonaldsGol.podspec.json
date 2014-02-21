@@ -1,0 +1,17 @@
+{
+  "name": "McDonaldsGol",
+  "version": "0.0.1",
+  "summary": "A lib to communicate with McDonaldsGol backend",
+  "description": "                   A lib to communicate with McDonaldsGol backend\n",
+  "homepage": "https://confluence.r3d.com/display/MTM/Mandat+-+TSC+-+McDonalds",
+  "license": "Proprietary",
+  "authors": {
+    "Romain Pouclet": "romain.pouclet@techsolcom.ca"
+  },
+  "source": {
+    "git": "ssh://git@stash.r3d.com:7999/mcdon/ios.git",
+    "tag": "0.0.1"
+  },
+  "source_files": "McDonaldsGol/**/*.{h,m}",
+  "requires_arc": true
+}

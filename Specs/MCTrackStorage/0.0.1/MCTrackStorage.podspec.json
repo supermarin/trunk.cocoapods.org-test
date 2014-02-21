@@ -1,0 +1,27 @@
+{
+  "name": "MCTrackStorage",
+  "version": "0.0.1",
+  "license": "Private",
+  "summary": "MCTrackStorage is MorrisCooke library for archiving and unarchiving files with tracks.",
+  "homepage": "http://morriscooke.com",
+  "authors": {
+    "Maciek Kupczak": "maciek.kupczak@gmail.com"
+  },
+  "source": {
+    "git": "ssh://kurakmorr@git.morriscooke.com/home/git/MCTrackStorage/",
+    "tag": "v0.0.1"
+  },
+  "platforms": {
+    "ios": "6.0",
+    "osx": "10.8"
+  },
+  "source_files": "MCTrackStorage",
+  "dependencies": {
+    "MCFoundation": [
+      "~> 0.0.1"
+    ],
+    "MCGraphics": [
+      "~> 0.0.1"
+    ]
+  }
+}

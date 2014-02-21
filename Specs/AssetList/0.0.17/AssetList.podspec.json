@@ -1,0 +1,35 @@
+{
+  "name": "AssetList",
+  "version": "0.0.17",
+  "summary": "A pod used to search and display assets from the Synergy Engines framework.",
+  "homepage": "http://clrepo.guc.loc/guc_asset_list_pod_ios.git/master/",
+  "license": "MIT",
+  "authors": {
+    "Aaron Johnson": "johnsowa@guc.com"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "requires_arc": true,
+  "source": {
+    "git": "git@clrepo.guc.loc:/opt/git/guc_asset_list_pod_ios.git",
+    "tag": "0.0.17"
+  },
+  "source_files": "AssetList/*.{h,m}",
+  "resources": "AssetList/**/*.{storyboard}",
+  "exclude_files": "AssetList/{AppDelegate,main}.{h,m}",
+  "dependencies": {
+    "EnginesFramework": [
+      "0.0.16"
+    ],
+    "UICKeyChainStore": [
+
+    ],
+    "PodInteraction": [
+
+    ],
+    "MBProgressHUD": [
+      "= 0.8"
+    ]
+  }
+}

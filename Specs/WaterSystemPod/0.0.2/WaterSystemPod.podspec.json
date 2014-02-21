@@ -1,0 +1,37 @@
+{
+  "name": "WaterSystemPod",
+  "version": "0.0.2",
+  "summary": "A pod used to display map-based information about GUC Water Systems",
+  "homepage": "http://clrepo.guc.loc/guc_watersystem_pod_ios.git/master/",
+  "license": "MIT",
+  "authors": {
+    "Paul Marney": "Marneypt@guc.com"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "requires_arc": true,
+  "source": {
+    "git": "git@clrepo:/opt/git/guc_watersystem_pod_ios.git",
+    "tag": "0.0.2"
+  },
+  "source_files": "WaterSystemPod/*{h,m}",
+  "resources": "WaterSystemPod/**/*{storyboard}",
+  "dependencies": {
+    "ArcGis": [
+      "~> 10.2.3"
+    ],
+    "PodInteraction": [
+
+    ]
+  },
+  "frameworks": [
+    "UIKit",
+    "Foundation",
+    "QuartzCore"
+  ],
+  "xcconfig": {
+    "FRAMEWORK_SEARCH_PATHS": "$(PODS_ROOT)/ArcGIS",
+    "OTHER_LDFLAGS": "-ObjC -all_load -framework ArcGIS"
+  }
+}

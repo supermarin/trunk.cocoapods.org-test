@@ -1,0 +1,19 @@
+{
+  "name": "TABLibrary",
+  "version": "1.1.1",
+  "platforms": {
+    "ios": "6.0"
+  },
+  "license": "LICENSE",
+  "authors": {
+    "The App Business": "https://www.theappbusiness.com"
+  },
+  "homepage": "https://www.theappbusiness.com",
+  "requires_arc": true,
+  "summary": "TAB Library",
+  "source": {
+    "git": "ssh://git@bitbucket.org/theappbusiness/tab-library.git",
+    "tag": "1.1.1"
+  },
+  "source_files": "TAB Library/**/*.{h,m}"
+}

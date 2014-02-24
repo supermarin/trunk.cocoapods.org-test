@@ -1,0 +1,25 @@
+{
+  "name": "AGLocationManager",
+  "version": "1.0.0",
+  "summary": "Easy location manager.",
+  "homepage": "https://bitbucket.org/andreseko/aglocationmanager",
+  "license": "MIT",
+  "authors": {
+    "Andre Goncalves": "andreseko@gmail.com"
+  },
+  "social_media_url": "http://twitter.com/andreseko",
+  "platforms": {
+    "ios": "6.1"
+  },
+  "source": {
+    "git": "https://bitbucket.org/andreseko/aglocationmanager",
+    "tag": "v1.0.0"
+  },
+  "source_files": "AGLocationManager.{h,m,bundle}",
+  "exclude_files": "README.md",
+  "frameworks": [
+    "CoreLocation",
+    "Mapkit"
+  ],
+  "requires_arc": true
+}

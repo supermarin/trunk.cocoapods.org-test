@@ -1,0 +1,27 @@
+{
+  "name": "WSWritingView",
+  "version": "0.0.2",
+  "summary": "A simple writing view.",
+  "description": "A subclass of UIView that allows writing and drawing using touches.",
+  "homepage": "http://willsjah.com/WSWritingView",
+  "license": "MIT",
+  "authors": {
+    "William Sjahrial": "will@willsjah.com"
+  },
+  "source": {
+    "git": "https://github.com/willsjah/WSWritingView.git",
+    "tag": "0.0.2"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "requires_arc": true,
+  "source_files": [
+    "Classes",
+    "Classes/**/*.{h,m}"
+  ],
+  "exclude_files": "Classes/Exclude",
+  "ios": {
+    "frameworks": "QuartzCore"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "APLWebView",
+  "version": "0.0.3",
+  "summary": "UIWebView subclass with extended behavior. E.g pull to refresh, custom activity indicator",
+  "description": "                   UIWebView subclass with extended behavior. E.g pull to refresh, custom activity indicator\n",
+  "homepage": "http://www.objc.io/issue-1/lighter-view-controllers.html",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": "apploft GmbH",
+  "platforms": {
+    "ios": "6.0"
+  },
+  "source": {
+    "git": "git@bitbucket.org:lb-lab/aplwebview.git",
+    "tag": "0.0.3"
+  },
+  "source_files": "Classes/*.{h,m}",
+  "exclude_files": "Classes/Exclude",
+  "dependencies": {
+    "NSData+Base64": [
+      "~> 1.0.0"
+    ]
+  },
+  "requires_arc": true
+}

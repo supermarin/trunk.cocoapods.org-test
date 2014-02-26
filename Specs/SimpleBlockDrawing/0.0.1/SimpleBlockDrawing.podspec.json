@@ -1,0 +1,22 @@
+{
+  "name": "SimpleBlockDrawing",
+  "version": "0.0.1",
+  "summary": "Category for drawing on UIView with a simplest way",
+  "description": "                   Category for drawing on UIView with a simplest way\n",
+  "homepage": "https://github.com/mhergon/SimpleBlockDrawing",
+  "license": "MIT (LICENSE)",
+  "authors": {
+    "Marc Hervera": "mhergon@gmail.com"
+  },
+  "platforms": {
+    "ios": "6.0"
+  },
+  "source": {
+    "git": "https://github.com/mhergon/SimpleBlockDrawing.git",
+    "commit": "07371fa1b973f0693495e5e42c1451c14f2de7bd"
+  },
+  "source_files": [
+    "UIView+DrawBlock.h",
+    "UIView+DrawBlock.m"
+  ]
+}

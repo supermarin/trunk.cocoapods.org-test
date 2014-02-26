@@ -1,0 +1,25 @@
+{
+  "name": "QBServer",
+  "version": "0.1.4",
+  "summary": "Quiz Battler 2 Server Connection Classes",
+  "description": "\t\t\tQuiz Battle 2 Server Connection Classes\n\n\t\t\tThis pod includes the protocol for communicating with the Quiz Battle 2 Server\n",
+  "license": "MIT",
+  "homepage": "http://www.planeto.com",
+  "authors": {
+    "David Arve": "david@planeto.com"
+  },
+  "source": {
+    "git": "/Users/davidarve/Desktop/GitServer/QBServer.git",
+    "tag": "0.1.4"
+  },
+  "social_media_url": "https://twitter.com/NAME",
+  "requires_arc": true,
+  "source_files": "Classes",
+  "resources": "Assets",
+  "ios": {
+    "exclude_files": "Classes/osx"
+  },
+  "osx": {
+    "exclude_files": "Classes/ios"
+  }
+}

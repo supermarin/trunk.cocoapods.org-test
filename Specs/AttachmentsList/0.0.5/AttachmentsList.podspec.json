@@ -1,0 +1,35 @@
+{
+  "name": "AttachmentsList",
+  "version": "0.0.5",
+  "summary": "A pod used to search and display assets from the Synergy Engines framework.",
+  "homepage": "http://clrepo.guc.loc/guc_attachmentslist_pod_ios.git/master/",
+  "license": "MIT",
+  "authors": {
+    "Paul Marney": "Marneypt@guc.com"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "requires_arc": true,
+  "source": {
+    "git": "git@clrepo.guc.loc:/opt/git/guc_attachmentslist_pod_ios.git",
+    "tag": "0.0.5"
+  },
+  "source_files": "AttachmentsList/*.{h,m}",
+  "resources": "AttachmentsList/**/*.{storyboard}",
+  "exclude_files": "AttachmentsList/{AppDelegate,main}.{h,m}",
+  "dependencies": {
+    "EnginesFramework": [
+      "~> 0.0.22"
+    ],
+    "UICKeyChainStore": [
+
+    ],
+    "PodInteraction": [
+
+    ],
+    "MBProgressHUD": [
+      "= 0.8"
+    ]
+  }
+}

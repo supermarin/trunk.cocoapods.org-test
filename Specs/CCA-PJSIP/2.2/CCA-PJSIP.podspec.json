@@ -1,0 +1,50 @@
+{
+  "name": "CCA-PJSIP",
+  "version": "2.2",
+  "summary": "PJSIP SIP stack.",
+  "homepage": "http://www.pjsip.org",
+  "license": {
+    "type": "Dual license (GPL/commercial)",
+    "text": "      Copyright (C) 2003-2008 Benny Prijono <benny@prijono.org>\n      Copyright (C) 2008-2011 Teluu Inc. (http://www.teluu.com)\n\n      This program is free software: you can redistribute it and/or modify it\n      under the terms of the GNU General Public License as published by the Free\n      Software Foundation, either version 2 of the License, or (at your option)\n      any later version.\n\n      This program is distributed in the hope that it will be useful, but\n      WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY\n      or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License\n      for more details.\n\n      You should have received a copy of the GNU General Public License along\n      with this program. If not, see http://www.gnu.org/licenses/.\n"
+  },
+  "authors": {
+    "Benny Prijono": "benny@prijono.org"
+  },
+  "source": {
+    "git": "git@bitbucket.org:controlcenterapps/cca-pjsip.git",
+    "tag": "2.2"
+  },
+  "platforms": {
+    "ios": "6.0"
+  },
+  "preserve_paths": [
+    "2.2/lib",
+    "2.2/include"
+  ],
+  "libraries": [
+    "g7221codec",
+    "gsmcodec",
+    "ilbccodec",
+    "pj",
+    "pjlib-util",
+    "pjmedia",
+    "pjmedia-audiodev",
+    "pjmedia-codec",
+    "pjnath",
+    "pjsip",
+    "pjsip-simple",
+    "pjsip-ua",
+    "pjsua",
+    "resample",
+    "speex",
+    "srtp"
+  ],
+  "frameworks": [
+    "AudioToolbox",
+    "CFNetwork"
+  ],
+  "xcconfig": {
+    "HEADER_SEARCH_PATHS": "\"$(PODS_ROOT)/CCA-PJSIP/2.2/include\"",
+    "LIBRARY_SEARCH_PATHS": "\"$(PODS_ROOT)/CCA-PJSIP/2.2/lib\""
+  }
+}

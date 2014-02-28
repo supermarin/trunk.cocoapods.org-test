@@ -1,0 +1,41 @@
+{
+  "name": "LotumCore",
+  "version": "1.1.1",
+  "summary": "Lotum iOS Core Framework",
+  "description": "                          Lotum Core adds basic dependencies and always needed or helpful functions. AFNetworking and MagicalRecord!\n",
+  "homepage": "http://www.lotum.de",
+  "license": "Proprietary",
+  "authors": {
+    "Sebastian Schilbe": "schilbe@lotum.de",
+    "Dennis Becker": "becker@lotum.de",
+    "Benjamin Koch": "koch@lotum.de"
+  },
+  "platforms": {
+    "ios": "6.0"
+  },
+  "source": {
+    "git": "ssh://aws-svn.games-for-friends.com/var/git/LotumCore.git",
+    "tag": "1.1.1"
+  },
+  "source_files": "LotumCore/Core/**/*.{h,m}",
+  "prefix_header_file": "LotumCore/Core/LotumCore.pch",
+  "frameworks": [
+    "CoreData",
+    "CoreGraphics",
+    "Security",
+    "SystemConfiguration",
+    "MobileCoreServices"
+  ],
+  "requires_arc": true,
+  "dependencies": {
+    "AFNetworking": [
+      "~> 2.1"
+    ],
+    "MagicalRecord": [
+      "~> 2.1"
+    ],
+    "SSZipArchive": [
+
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "PodInterfaces",
+  "version": "0.0.3",
+  "summary": "This pod includes all the interfaces.",
+  "homepage": "http://www.soundofdata.nl",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Niels Koole": "niels.koole@soundofdata.nl"
+  },
+  "platforms": {
+    "ios": "6.0"
+  },
+  "source": {
+    "git": "http://admin:d0(kw0rk5@git.sod.intra:8080/git/PodInterfaces/Interfaces.git",
+    "tag": "0.0.3"
+  },
+  "source_files": [
+    "Classes",
+    "Classes/**/*.{h,m}"
+  ],
+  "requires_arc": true,
+  "xcconfig": {
+    "HEADER_SEARCH_PATHS": "$(SDKROOT)/usr/include/libxml2"
+  },
+  "frameworks": "CoreLocation",
+  "public_header_files": "Classes/**/*.h"
+}
